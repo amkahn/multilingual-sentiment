@@ -15,9 +15,9 @@ for f in $FILES; do
     # First array element is the reviewer rating
     RATING=${arr[0]}
     # Rest of array is the pre-processed review text
-#    TEXT=$arr{@:2}
+    TEXT="${arr[@]:1}"
     echo "Here is the rating:"
     echo $RATING
     echo "Here is the text:"
-#    echo $TEXT
+    echo $TEXT
 done

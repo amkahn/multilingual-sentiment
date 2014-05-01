@@ -15,10 +15,8 @@ def main():
     print rating,
     # TODO: Perform pre-processing (tokenization, case collapsing) on the review text
 #    stderr.write(str(type(text))) # should be unicode
-#    text = text.encode('UTF-8')
-#    stderr.write(str(type(text))) # should be str
-    # FIXME: Do unicode encoding from charset=iso-8859-1 (above code returns None)
-    print str(text)
+    text = text.encode('UTF-8')
+    print text
     xml_file.close()
 
 
