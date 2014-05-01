@@ -6,7 +6,6 @@
 from bs4 import BeautifulSoup
 from sys import argv
 from sys import stderr
-# import codecs
 
 
 def main():
