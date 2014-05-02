@@ -33,8 +33,8 @@ def extract_review_attributes(file):
     
 # FIXME: This causes an error -- not sure why? Also make sure stderr will print from shell
 # Make sure that the review rating is out of 5
-#    if parsed.review['maxRank']!=5:
-#        stderr.write("WARNING: Rating is not out of 5 in file %s\n" % argv[1])
+    if parsed.review['maxrank']!='5':
+        stderr.write("WARNING: Rating is not out of 5 in file %s\n" % argv[1])
 
     rating = parsed.review['rank']
     # FIXME: This includes the summary text.
