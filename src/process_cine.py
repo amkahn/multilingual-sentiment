@@ -6,15 +6,22 @@
 from bs4 import BeautifulSoup
 from sys import argv
 from sys import stderr
+from nltk import sent_tokenize, word_tokenize
 
 
 def main():
     xml_file = open(argv[1])
     rating, text = extract_review_attributes(xml_file)
     print rating,
-    # TODO: Perform pre-processing (tokenization, case collapsing) on the review text
+    # Perform pre-processing (tokenization, case collapsing) on the review text
+#    stderr.write("ORIGINAL REVIEW TEXT:\n%s\n" % text)
+    text = text.lower()
+#    stderr.write("LC REVIEW TEXT:\n%s\n" % text)
 #    stderr.write(str(type(text))) # should be unicode
     text = text.encode('UTF-8')
+    tokens = [word for sent in sent_tokenize(text) for word in word_tokenize(sent)]
+    text = ' '.join(tokens)
+#    stderr.write("TOKENIZED REVIEW TEXT:\n%s\n" % text)
     print text
     xml_file.close()
 
