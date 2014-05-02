@@ -6,7 +6,7 @@ FILES=$(find /home2/amkahn/workspace/575/data/corpusCine/corpusCriticasCine -max
 # Get the number of XML files
 # echo "$FILES" | wc -l
 
-# For each XML file
+# For each XML file:
 for FILE in $FILES; do
     # Run the python script on the file
     OUT=$(./process_cine.py "$FILE")
@@ -18,22 +18,23 @@ for FILE in $FILES; do
     TEXT="${arr[@]:1}"
     echo "Here is the rating:"
     echo $RATING
-    OIFS="$IFS"
-    IFS="/" read -a filearr <<<$FILE
-    IFS="$OIFS"
-    echo $filearr
-    read -a filearray <<<$filearr
-    echo $filearray
-    echo ${#filearray[@]}
-    F=$filearray[${#filearray[@]}-1]
-    echo $F
-#     if [ "$RATING" = "1" ] || [ "$RATING" = "2" ]; then
-#         echo "This is a negative review; writing to file in negative directory"
-#         echo $TEXT > /home2/amkahn/workspace/575/data/cine_processed/neg/$F
-#     elif [ "$RATING" = "4" ] || [ "$RATING" = "5" ]; then
-#         echo "This is a positive review; writing to file in positive directory"
-#         echo $TEXT > /home2/amkahn/workspace/575/data/cine_processed/pos/$F
-#     else
-#         echo "This is a neutral review; throwing it out"  
-#     fi
+#    echo "Here is the text:"
+#    echo $TEXT
+#    echo "Here is the full file path:"
+#    echo $FILE
+    F=$(echo $FILE | sed "s/\/home2\/amkahn\/workspace\/575\/data\/corpusCine\/corpusCriticasCine\/\([0-9]*\)\.xml/\1/")
+#     echo "Here is the stripped filename:"
+#     echo $F
+
+    # Write the review text to a TXT file in the appropriate pos/neg folder based on rating
+    if [ "$RATING" = "1" ] || [ "$RATING" = "2" ]; then
+        echo "This is a negative review; writing to file in negative directory"
+        echo $TEXT > /home2/amkahn/workspace/575/data/cine_processed/neg/$F.txt
+    elif [ "$RATING" = "4" ] || [ "$RATING" = "5" ]; then
+        echo "This is a positive review; writing to file in positive directory"
+        echo $TEXT > /home2/amkahn/workspace/575/data/cine_processed/pos/$F.txt
+    else
+        echo "This is a neutral review; throwing it out"  
+    fi
+
 done
