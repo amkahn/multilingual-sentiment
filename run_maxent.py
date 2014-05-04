@@ -25,45 +25,46 @@ import re
 import subprocess
 
 def main():
-	# first argument is the input directory
-	input_dir = sys.argv[1]
-	# second argument is the output directory
-	output_dir = sys.argv[2]
+    # first argument is the input directory
+    input_dir = sys.argv[1]
+    # second argument is the output directory
+    output_dir = sys.argv[2]
 
     # create output directory if it doesn't already exist
-	if not os.path.exists(output_dir):
-		os.makedirs(output_dir)
+    if not os.path.exists(output_dir):
+        os.makedirs(output_dir)
 
     # create vectors from input_dir items
     train_vectors,test_vectors = create_vectors(input_dir)
 
     # print train vectors to train.vectors.txt in output_dir
-	train_vectors_file = open(output_dir+'/train.vectors.txt','w')
-	for vector in train_vectors:
-		# first two items are instance name and label
+    train_vectors_file = open(output_dir+'/train.vectors.txt','w')
+    for vector in train_vectors:
+        #sys.stderr.write("Here is a training vector: "+str(vector)+"\n")
+        # first two items are instance name and label
         # because of issue with Mallet, replace "," with "comma"
-		instance_name = re.sub(',','comma',vector[0])
-		label = re.sub(',','comma',vector[1])
-		train_vectors_file.write(instance_name+" "+label+" ")
-		for feature in train_vectors[2:]:
-			feature = re.sub(',','comma',feature)
-			train_vectors_file.write(feature+" 1 ")
-		train_vectors_file.write("\n")
-	train_vectors_file.close()
+        instance_name = re.sub(',','comma',vector[0])
+        label = re.sub(',','comma',vector[1])
+        train_vectors_file.write(instance_name+" "+label+" ")
+        for feature in vector[2:]:
+            feature = re.sub(',','comma',feature)
+            train_vectors_file.write(feature+" 1 ")
+        train_vectors_file.write("\n")
+    train_vectors_file.close()
 
     # print test vectors to test.vectors.txt in output_dir
-	test_vectors_file = open(output_dir+'/test.vectors.txt','w')
-	for vector in test_vectors:
-		# first two items are instance name and label
+    test_vectors_file = open(output_dir+'/test.vectors.txt','w')
+    for vector in test_vectors:
+        # first two items are instance name and label
         # because of issue with Mallet, replace "," with "comma"
-		instance_name = re.sub(',','comma',vector[0])
-		label = re.sub(',','comma',vector[1])
-		test_vectors_file.write(instance_name+" "+label+" ")
-		for feature in test_vectors[2:]:
-			feature = re.sub(',','comma',feature)
-			test_vectors_file.write(feature+" 1 ")
-		test_vectors_file.write("\n")
-	test_vectors_file.close()
+        instance_name = re.sub(',','comma',vector[0])
+        label = re.sub(',','comma',vector[1])
+        test_vectors_file.write(instance_name+" "+label+" ")
+        for feature in vector[2:]:
+            feature = re.sub(',','comma',feature)
+            test_vectors_file.write(feature+" 1 ")
+        test_vectors_file.write("\n")
+    test_vectors_file.close()
 
     # run mallet commands
     mallet_maxent(output_dir)
@@ -85,13 +86,13 @@ def create_vectors(input_dir):
             # for each file, build a vector
             instance_name = os.path.basename(files[i])
             vector = [instance_name,label]
-            current_file = open(files[i],'r'):
+            current_file = open(files[i],'r')
 
-                # unigram features
-                unigrams = Counter()
-                for line in current_file:
-                    for unigram in line.split():
-                        unigrams[unigram] += 1
+            # unigram features
+            unigrams = Counter()
+            for line in current_file:
+                for unigram in line.split():
+                    unigrams[unigram] += 1
             for unigram_feature in unigrams.keys():
                 vector.append(unigram_feature)
 

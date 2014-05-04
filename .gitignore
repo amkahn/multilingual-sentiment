@@ -1,5 +1,8 @@
 # ignore my notes on Mallet
 mallet_notes.txt
 
+# data files are too large
+data/
+
 *.pyc
 *~
