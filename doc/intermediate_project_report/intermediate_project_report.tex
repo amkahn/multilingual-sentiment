@@ -29,11 +29,22 @@
 
 Sentiment analysis techniques are typically developed on English text.  However, there is a proliferation of text in other languages as well, which could benefit from sentiment analysis.  Current approaches to sentiment analysis in languages other than English often involve automatically translating the text into English, which is likely to introduce errors, as well as increasing runtimes.  Some techniques rely on manually developed resources which are only available in English; however, others rest on machine learning algorithms that can easily be applied to other languages.  In this paper, we propose an approach to evaluate the effectiveness of these techniques when transferred directly to other languages.
 
+\section{Related Work}
+
+http://www.grupolys.org/biblioteca/VilAloGom2013d.pdf
+
+\section{Data}
+
+For our experiments, we are using IMBD data
+and CorpusCine Reviews (Cruz Mata, 2011) - a collection of 3,878 movie reviews written in Spanish from the muchocine.net web page.  Each review has a rating between one (most negative) and five (most positive) stars.  For our purposes, we discard the three star reviews and classify the one and two star reviews as negative and the four and five star reviews as positive.  This leaves us with 351 + 923 negative reviews and 890 + 461 positive reviews.
+
 \section{Approach}
+
+We employ the Mallet toolkit to train and test polarity classifiers on these two datasets.  We plan to test a variety of classification algorithms and features, in order to determine if certain ones provide better results for one language or another.  Additionally, we plan to do a linguistic error analysis, to tease apart the impact of the language differences (in this vein, Andrea plans to use this course as a linguistics elective, while Claire is using it as a computational linguistics elective).
 
 \section{Results}
 
-This section should present the major results of the formal evaluation of your system and components.
+We have implemented a baseline system using a MaxEnt classifier and unigram bag of word features.  The results for this system are presented below.
 
 \section{Discussion}
 
