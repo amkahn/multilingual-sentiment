@@ -31,7 +31,6 @@ Sentiment analysis techniques are typically developed on English text.  However,
 
 \section{Related Work}
 
-http://www.grupolys.org/biblioteca/VilAloGom2013d.pdf
 
 \section{Data}
 
@@ -48,6 +47,45 @@ We employ the Mallet toolkit to train and test polarity classifiers on these two
 \section{Results}
 
 We have implemented a baseline system using a MaxEnt classifier and unigram bag of word features.  The results for this system are presented below.
+
+\vspace{5mm}
+{\centering
+\begin{tabular}{|c|c|c|c|}
+\hline
+\textbf{Classifier} & \textbf{features} & \textbf{IMDb} & \textbf{CorpusCine} \\ \hline
+MaxEnt & unigram & 88.00\% & 83.71\% \\ \hline
+\end{tabular}
+
+\vspace{1mm}
+\emph{Table 1: Baseline results.  Test accuracy for IMDb and CorpusCine.}
+\par}
+
+\vspace{5mm}
+{\centering
+\begin{tabular}{|c|c|c|}
+\hline
+\textbf{label} & \emph{negative} & \emph{positive} \\ \hline
+\emph{negative} & 86 & 14 \\ \hline
+\emph{positive} & 10 & 90 \\ \hline
+\end{tabular}
+
+\vspace{1mm}
+\emph{Table 2: IMDb confusion matrix. Row = true, column = predicted.}
+\par}
+
+\vspace{5mm}
+{\centering
+\begin{tabular}{|c|c|c|}
+\hline
+\textbf{label} & \emph{negative} & \emph{positive} \\ \hline
+\emph{negative} & 103 & 25 \\ \hline
+\emph{positive} & 18 & 118 \\ \hline
+\end{tabular}
+
+\vspace{1mm}
+\emph{Table 3: CorpusCine confusion matrix. Row = true, column = predicted.}
+\par}
+
 
 \section{Discussion}
 
