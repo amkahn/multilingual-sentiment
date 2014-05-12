@@ -23,6 +23,7 @@
 \begin{document}
 \maketitle
 \begin{abstract}
+In this paper, we propose an approach to compare the effectiveness of supposedly language-agnostic sentiment analysis techniques such as machine learning algorithms on text in different languages. In addition, we plan to compare results obtained when using resources such as sentiment lexicons that are pivoted or translated from English versus using resources that are developed in the test language.
 \end{abstract}
 
 \section{Introduction}
@@ -92,7 +93,9 @@ MaxEnt & unigram & 88.00\% & 83.71\% \\ \hline
 
 \section{Discussion}
 
-Our next steps include cutting back the CorpusCine train and test sets to have the same number of reviews as the IMDb train and test sets to make the results as directly comparable as possible.  To this end, we will also compare review lengths (i.e. average, minimum, and maximum number of tokens and types).  After that, we hope to implement n-fold cross validation of our results (most likely with n=10).  Once our datasets are fully established, we will test different classification algorithms and features, as well as external resources (e.g. polarity lexicons, both native and translated).
+Our next steps include cutting back the CorpusCine train and test sets to have the same number of reviews as the IMDb train and test sets to make the results as directly comparable as possible.  To this end, we will also compare review lengths (i.e. average, minimum, and maximum number of tokens and types).  After that, we hope to implement n-fold cross validation of our results (most likely with n=10). 
+
+Once our datasets are fully established, we will test different classification algorithms and features, as well as a variety of external resources (e.g. polarity lexicons, both native and pivoted/translated).
 
 \section{Conclusion}
 
