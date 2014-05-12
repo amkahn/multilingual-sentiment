@@ -1,0 +1,76 @@
+\begin{thebibliography}{}
+
+\bibitem[\protect\citename{Balahur~Dobrescu}2011]{balahur2011}
+Alexandra Balahur~Dobrescu.
+\newblock 2011.
+\newblock {\em Methods and Resources for Sentiment Analysis in Multilingual
+  Documents of Different Text Types}.
+\newblock {Ph.D.} thesis, Universidad de Alicante.
+
+\bibitem[\protect\citename{Boiy and Moens}2009]{boiy2009}
+Erik Boiy and Marie-Francine Moens.
+\newblock 2009.
+\newblock A machine learning approach to sentiment analysis in multilingual web
+  texts.
+\newblock {\em Information Retrieval}, 12(5):526--558.
+
+\bibitem[\protect\citename{Brooke \bgroup et al.\egroup }2009]{brooke2009}
+Julian Brooke, Milan Tofiloski, and Maite Taboada.
+\newblock 2009.
+\newblock Cross-linguistic sentiment analysis: From english to spanish.
+\newblock In {\em International Conference RANLP}, pages 50--54.
+
+\bibitem[\protect\citename{Fern{\'a}ndez~Anta}2012]{fernandez2012}
+Antonio Fern{\'a}ndez~Anta.
+\newblock 2012.
+\newblock Techniques for sentiment analysis and topic detection of spanish
+  tweets: preliminary report.
+
+\bibitem[\protect\citename{Pang and Lee}2004]{pang2004}
+Bo~Pang and Lillian Lee.
+\newblock 2004.
+\newblock A sentimental education: Sentiment analysis using subjectivity
+  summarization based on minimum cuts.
+\newblock In {\em Proceedings of the 42nd annual meeting on Association for
+  Computational Linguistics}, page 271. Association for Computational
+  Linguistics.
+
+\bibitem[\protect\citename{Pang \bgroup et al.\egroup }2002]{pang2002}
+Bo~Pang, Lillian Lee, and Shivakumar Vaithyanathan.
+\newblock 2002.
+\newblock Thumbs up?: sentiment classification using machine learning
+  techniques.
+\newblock In {\em Proceedings of the ACL-02 conference on Empirical methods in
+  natural language processing-Volume 10}, pages 79--86. Association for
+  Computational Linguistics.
+
+\bibitem[\protect\citename{Urizar \bgroup et al.\egroup }2012]{urizar2012}
+Xabier~Saralegi Urizar, Elhuyar Fundazioa, and Inaki San~Vicente Roncal.
+\newblock 2012.
+\newblock Tass: Detecting sentiments in spanish tweets.
+\newblock {\em TASS 2012 Working Notes}.
+
+\bibitem[\protect\citename{Vilares \bgroup et al.\egroup }2013a]{vilares2013}
+David Vilares, Miguel~{\'A}ngel Alonso, and Carlos G{\'o}mez-Rodr{\'\i}guez.
+\newblock 2013a.
+\newblock Supervised polarity classification of spanish tweets based on
+  linguistic knowledge.
+\newblock In {\em Proceedings of the 2013 ACM symposium on Document
+  engineering}, pages 169--172. ACM.
+
+\bibitem[\protect\citename{Vilares \bgroup et al.\egroup
+  }2013b]{vilares2013syn}
+David Vilares, Miguel~{\'A}ngel Alonso, and Carlos G{\'o}mez-Rodr{\'i}guez.
+\newblock 2013b.
+\newblock A syntactic approach for opinion mining on spanish reviews.
+\newblock {\em Natural Language Engineering}, pages 1--25.
+
+\bibitem[\protect\citename{Zhang \bgroup et al.\egroup }2009]{zhang2009}
+Changli Zhang, Daniel Zeng, Jiexun Li, Fei-Yue Wang, and Wanli Zuo.
+\newblock 2009.
+\newblock Sentiment analysis of chinese documents: From sentence to document
+  level.
+\newblock {\em Journal of the American Society for Information Science and
+  Technology}, 60(12):2474--2487.
+
+\end{thebibliography}
