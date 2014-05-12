@@ -36,4 +36,4 @@ Information Science and Technology, 60(12), 2474{2487.
 
 http://rua.ua.es/dspace/bitstream/10045/19437/1/tesis_alexandrabalahur.pdf
 
-https://www.cs.cornell.edu/people/pabo/movie-review-data/
+ https://www.cs.cornell.edu/people/pabo/movie-review-data/
