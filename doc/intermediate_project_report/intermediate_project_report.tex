@@ -46,7 +46,7 @@ We employ the Mallet toolkit to train and test polarity classifiers on these two
 
 \section{Results}
 
-We have implemented a baseline system using a MaxEnt classifier and unigram bag of word features.  The results for this system are presented below.
+We have implemented a baseline system on both movie review datasets using a MaxEnt classifier and unigram bag of word features.  For each dataset, we use 90\% of the reviews for training and 10\% for testing; this gives us a training set of 900 positive and 900 negative reviews for the IMDb corpus and 1,215 positive and 1,146 negative reviews for the CorpusCine corpus.  There are 100 positive and 100 negative reviews in the IMDb test set and 136 positive and 128 negative reviews in the CorpusCine test set.  The results for this system are presented below.
 
 \vspace{5mm}
 {\centering
@@ -86,9 +86,9 @@ MaxEnt & unigram & 88.00\% & 83.71\% \\ \hline
 \emph{Table 3: CorpusCine confusion matrix. Row = true, column = predicted.}
 \par}
 
-
 \section{Discussion}
 
+Our next steps include cutting back the CorpusCine train and test sets to have the same number of reviews as the IMDb train and test sets to make the results as directly comparable as possible.  To this end, we will also compare review lengths (i.e. average, minimum, and maximum number of tokens and types).  After that, we hope to implement n-fold cross validation of our results (most likely with n=10).  Once our datasets are fully established, we will test different classification algorithms and features, as well as external resources (e.g. polarity lexicons, both native and translated).
 
 \section{Conclusion}
 
