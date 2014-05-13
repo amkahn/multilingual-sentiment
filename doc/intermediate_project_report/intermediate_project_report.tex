@@ -93,6 +93,8 @@ MaxEnt & unigram & 88.00\% & 83.71\% \\ \hline
 
 \section{Discussion}
 
+The task we approach in this project has many challenges.  In addition to the challenge of polarity classification, finding appropriately parallel corpora in two languages and performing pre-processing on the data so that the same techniques could be applied to data from both corpora was difficult.  Likewise, finding parallel sentiment lexicons that are both pivoted/translated and native (in multiple languages) will be a challenge.  Finally, we will be faced with the task of analyzing results to determine whether differing results in different languages and/or using different resources are due to differing lexical and syntactic properties of the languages.
+
 Our next steps include cutting back the CorpusCine train and test sets to have the same number of reviews as the IMDb train and test sets to make the results as directly comparable as possible.  To this end, we will also compare review lengths (i.e. average, minimum, and maximum number of tokens and types).  After that, we hope to implement n-fold cross validation of our results (most likely with n=10). 
 
 Once our datasets are fully established, we will test different classification algorithms and features, as well as a variety of external resources (e.g. polarity lexicons, both native and pivoted/translated).
