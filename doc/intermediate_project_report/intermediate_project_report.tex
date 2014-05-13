@@ -28,14 +28,21 @@ In this paper, we propose an approach to compare the effectiveness of supposedly
 
 \section{Introduction}
 
-Sentiment analysis techniques are typically developed on English text.  However, there is a proliferation of text in other languages as well, which could benefit from sentiment analysis.  Current approaches to sentiment analysis in languages other than English often involve automatically translating the text into English, which is likely to introduce errors, as well as increasing runtimes.  Furthermore, we suspect that syntactic variation between languages means that different features are more useful for different languages.
+Sentiment analysis techniques are typically developed on English text.  However, there is a proliferation of text in other languages as well, which could benefit from sentiment analysis.  Current approaches to sentiment analysis in languages other than English often involve automatically translating the text into English, which is likely to introduce errors, as well as increasing runtimes.  Furthermore, we suspect that syntactic variation between languages means that different features may be more useful for different languages.
 
-Some techniques build on machine learning algorithms that can easily be applied to other languages.  Others rely on manually developed resources such as sentiment lexicons, which are language-specific; often lexicons in languages other than English are pivoted from English rather than developed for that language.
+Some techniques build on machine learning algorithms that can easily be applied to other languages.  Others rely on manually developed resources such as sentiment lexicons, which are language-specific; often lexicons in languages other than English are translated or pivoted from English rather than developed for that language.
 
 In this paper, we propose an approach to compare the effectiveness of supposedly language-agnostic techniques such as machine learning algorithms on text in different languages. In addition, we plan to compare results obtained when using resources such as sentiment lexicons that are pivoted or translated from English versus using resources that are developed in the test language.
 
 \section{Related Work}
 
+Dobrescu (2011) compares the results of performing sentiment analysis and opinion mining on different text types using a variety of multilingual resources, many of them hand-built. She allegedly obtains "good" results even on texts in languages for which no resources are available and either the texts or resources need to be translated, though we plan to take a closer look.
+
+Brooke et al. (2009) adapt various English resources, including semantic orientation calculators and dictionaries, for Spanish sentiment analysis. They also compare the results of using machine translation to translate the Spanish text into English, as well as using a language-independent machine learning algorithm (SVM classification) to classify the Spanish text. They conclude that the results obtained using adapted resources are not comparable to those using language-specific resources.
+
+Vilares et al. (2013b) describes a system for polarity classification of Spanish texts that uses dependency parsing to access the syntactic structure of the sentences to be classified. This paper is unique in that it diverges from the shallow approaches taken in most polarity classification papers, and whether or not we are able to employ deep processing techniques, we hope to learn more about challenges that may be specific to Spanish sentiment analysis from the approach and results presented here.
+
+Other papers describing related work that we hope to study and draw from include Boiy & Moens (2009), Cruz Mata (2011), Anta (2012), Pang & Lee (2004), Pang et al. (2002), Urizar et al. (2012), Vilares et al. (2013a), and Zhang et al. (2009).
 
 \section{Data}
 
@@ -93,7 +100,7 @@ MaxEnt & unigram & 88.00\% & 83.71\% \\ \hline
 
 \section{Discussion}
 
-The task we approach in this project has many challenges.  In addition to the challenge of polarity classification, finding appropriately parallel corpora in two languages and performing pre-processing on the data so that the same techniques could be applied to data from both corpora was difficult.  Likewise, finding parallel sentiment lexicons that are both pivoted/translated and native (in multiple languages) will be a challenge.  Finally, we will be faced with the task of analyzing results to determine whether differing results in different languages and/or using different resources are due to differing lexical and syntactic properties of the languages.
+The task we approach in this project has many challenges.  In addition to the challenge of polarity classification, finding appropriately parallel corpora in two languages and performing pre-processing on the data so that the same techniques could be applied to data from both corpora proved difficult.  Likewise, finding parallel sentiment lexicons that are both pivoted/translated and native (in multiple languages) will be a challenge.  Finally, we will be faced with the task of analyzing results to determine whether differing results in different languages and/or using different resources are due to differing syntactic properties of the languages.
 
 Our next steps include cutting back the CorpusCine train and test sets to have the same number of reviews as the IMDb train and test sets to make the results as directly comparable as possible.  To this end, we will also compare review lengths (i.e. average, minimum, and maximum number of tokens and types).  After that, we hope to implement n-fold cross validation of our results (most likely with n=10). 
 
