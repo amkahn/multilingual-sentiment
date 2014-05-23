@@ -1,0 +1,55 @@
+Trial #0
+train acc: 1.0
+test acc: 0.83
+
+confusion matrix, row=true, column=predict
+label   0   1
+0 pos   81  19
+1 neg   15  85
+
+Trial #1
+train acc: 1.0
+test acc: 0.825
+
+label   0   1
+0 pos   79  21
+1 neg   14  86
+
+Trial #2
+train acc: 1.0
+test acc: 0.815
+
+label   0   1
+0 pos   79  21
+1 neg   16  84
+
+Trial #3
+train acc: 1.0
+test acc: 0.82
+
+label   0   1
+0 pos   83  17
+1 neg   19  81
+
+Trial #4
+train acc: 1.0
+test acc: 0.86
+
+too lazy to copy any more confusion matrices
+
+Trial #5
+assume training accuracy 1.0 if not otherwise stated
+test acc: 0.845
+
+Trial #6
+test acc: 0.855
+
+Trial #7
+test acc: 0.855
+
+Trial #8
+test acc: 0.815
+
+Trial #9
+test acc: 0.82
+

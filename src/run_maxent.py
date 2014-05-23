@@ -35,44 +35,54 @@ def main():
         os.makedirs(output_dir)
 
     # create vectors from input_dir items
-    train_vectors,test_vectors = create_vectors(input_dir)
+    sys.stderr.write("Creating vectors...\n")
+    all_train_vectors,all_test_vectors = create_vectors(input_dir)
 
-    # print train vectors to train.vectors.txt in output_dir
-    train_vectors_file = open(output_dir+'/train.vectors.txt','w')
-    for vector in train_vectors:
-        #sys.stderr.write("Here is a training vector: "+str(vector)+"\n")
-        # first two items are instance name and label
-        # because of issue with Mallet, replace "," with "comma"
-        instance_name = re.sub(',','comma',vector[0])
-        label = re.sub(',','comma',vector[1])
-        train_vectors_file.write(instance_name+" "+label+" ")
-        for feature in vector[2:]:
-            feature = re.sub(',','comma',feature)
-            train_vectors_file.write(feature+" 1 ")
-        train_vectors_file.write("\n")
-    train_vectors_file.close()
+    if len(all_train_vectors) > 10:
+        sys.stderr.write("ERROR: More than 10 train vectors!!\n")
+        sys.exit()
 
-    # print test vectors to test.vectors.txt in output_dir
-    test_vectors_file = open(output_dir+'/test.vectors.txt','w')
-    for vector in test_vectors:
-        # first two items are instance name and label
-        # because of issue with Mallet, replace "," with "comma"
-        instance_name = re.sub(',','comma',vector[0])
-        label = re.sub(',','comma',vector[1])
-        test_vectors_file.write(instance_name+" "+label+" ")
-        for feature in vector[2:]:
-            feature = re.sub(',','comma',feature)
-            test_vectors_file.write(feature+" 1 ")
-        test_vectors_file.write("\n")
-    test_vectors_file.close()
+    # print train vectors to train.n.vectors.txt in output_dir
+    for i in range(len(all_train_vectors)):
+        sys.stderr.write("Printing vector "+str(i)+"...\n")
+        train_vectors = all_train_vectors[i]
+        train_vectors_file = open(output_dir+'/train.'+str(i)+'.vectors.txt','w')
+        for vector in train_vectors:
+            #sys.stderr.write("Here is a training vector: "+str(vector)+"\n")
+            # first two items are instance name and label
+            # because of issue with Mallet, replace "," with "comma"
+            instance_name = re.sub(',','comma',vector[0])
+            label = re.sub(',','comma',vector[1])
+            train_vectors_file.write(instance_name+" "+label+" ")
+            for feature in vector[2:]:
+                feature = re.sub(',','comma',feature)
+                train_vectors_file.write(feature+" 1 ")
+            train_vectors_file.write("\n")
+        train_vectors_file.close()
+
+        # print test vectors to test.vectors.txt in output_dir
+        test_vectors = all_test_vectors[i]
+        test_vectors_file = open(output_dir+'/test.'+str(i)+'.vectors.txt','w')
+        for vector in test_vectors:
+            # first two items are instance name and label
+            # because of issue with Mallet, replace "," with "comma"
+            instance_name = re.sub(',','comma',vector[0])
+            label = re.sub(',','comma',vector[1])
+            test_vectors_file.write(instance_name+" "+label+" ")
+            for feature in vector[2:]:
+                feature = re.sub(',','comma',feature)
+                test_vectors_file.write(feature+" 1 ")
+            test_vectors_file.write("\n")
+        test_vectors_file.close()
 
     # run mallet commands
-    mallet_maxent(output_dir)
+    sys.stderr.write("Running MaxEnt...\n")
+    mallet_maxent(output_dir,len(all_train_vectors))
 
 
 def create_vectors(input_dir):
-    train_vectors = []
-    test_vectors = []
+    all_train_vectors = [list() for i in range(10)]
+    all_test_vectors = [list() for i in range(10)]
     # for each directory in the input directory
     possible_dir = [os.path.join(input_dir,x) for x in os.listdir(input_dir)]
     for dir in [x for x in possible_dir if os.path.isdir(x)]:
@@ -80,8 +90,19 @@ def create_vectors(input_dir):
         label = os.path.basename(dir)
         possible_files = [os.path.join(dir,x) for x in os.listdir(dir)]
         files = [x for x in possible_files if os.path.isfile(x)]
+
+
         # use first 90% files as train, last 10% as test
-        train_test_split = int(len(files)*.9)
+        #train_test_split = int(len(files)*.9)
+        #    if i < train_test_split:
+        #        train_vectors.append(vector)
+        #    else:
+        #        test_vectors.append(vector)
+
+
+
+        ten_percent = int(len(files)*.1)
+
         for i in range(len(files)):
             # for each file, build a vector
             instance_name = os.path.basename(files[i])
@@ -98,25 +119,34 @@ def create_vectors(input_dir):
 
             current_file.close()
 
-            if i < train_test_split:
-                train_vectors.append(vector)
-            else:
-                test_vectors.append(vector)
+            # add to appropriate training and test vectors
+            # for each cross-validation trial
+            for n in range(10):
+                # if this vector is in the 10% of files for test for that trial
+                if i >= n*ten_percent and i < (n+1)*ten_percent:
+                    #sys.stderr.write("Adding vector for file #"+str(i)+": "+str(files[i])+" to test for trial #"+str(n)+"\n")
+                    # use as test for this trial, train for all others
+                    all_test_vectors[n].append(vector)
+                    for j in range(10):
+                        if j != n:
+                            all_train_vectors[j].append(vector)
 
-    return train_vectors,test_vectors
+    return all_train_vectors,all_test_vectors
 
 
-def mallet_maxent(directory):
+def mallet_maxent(directory,n):
 	# use mallet import-file to convert vectors into binary format
 	# input: final_train.vectors.txt, final_test.vectors.txt
-	# will create: final_train.vectors, final_test.vectors	
-	subprocess.call(["mallet","import-file","--input "+directory+"/train.vectors.txt","--output "+directory+"/train.vectors"])
-	subprocess.call(["mallet","import-file","--input "+directory+"/test.vectors.txt","--output "+directory+"/test.vectors","--use-pipe-from "+directory+"/train.vectors"])
+	# will create: final_train.vectors, final_test.vectors
+    for i in range(n):
+        sys.stderr.write("Trial #"+str(i)+"\n")
+        subprocess.call(["mallet","import-file","--input "+directory+"/train."+str(i)+".vectors.txt","--output "+directory+"/train."+str(i)+".vectors"])
+        subprocess.call(["mallet","import-file","--input "+directory+"/test."+str(i)+".vectors.txt","--output "+directory+"/test."+str(i)+".vectors","--use-pipe-from "+directory+"/train."+str(i)+".vectors"])
 
-	# use vectors2classify to train and test model
-	# input: final_train.vectors, final_test.vectors
-	# output: me_model, training accuracy, testing accuracy
-	subprocess.call(["vectors2classify","--training-file",directory+"/train.vectors","--testing-file",directory+"/test.vectors","--trainer","MaxEnt","--report","test:raw","test:accuracy","test:confusion","train:accuracy","train:confusion","--output-classifier",directory+"/MaxEnt.model"],stdout=open(directory+"/MaxEnt.stdout",'w'),stderr=open(directory+"/MaxEnt.stderr",'w'))
+    	# use vectors2classify to train and test model
+	    # input: final_train.vectors, final_test.vectors
+    	# output: me_model, training accuracy, testing accuracy
+        subprocess.call(["vectors2classify","--training-file",directory+"/train."+str(i)+".vectors","--testing-file",directory+"/test."+str(i)+".vectors","--trainer","MaxEnt","--report","test:raw","test:accuracy","test:confusion","train:accuracy","train:confusion","--output-classifier",directory+"/MaxEnt."+str(i)+".model"],stdout=open(directory+"/MaxEnt."+str(i)+".stdout",'w'),stderr=open(directory+"/MaxEnt."+str(i)+".stderr",'w'))
 
 
 main()
