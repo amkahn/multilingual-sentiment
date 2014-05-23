@@ -1,0 +1,39 @@
+papers to look at:
+Boiy, E., and Moens, M. 2009. A machine learning approach to sentiment analysis in
+multilingual Web texts. Information Retrieval, 12(5), 526{558.
+
+Brooke, J., Toloski, M., and Taboada, M. 2009. Cross-Linguistic Sentiment Analysis:
+From English to Spanish. Pages 50{54 of: Proceedings of International Conference on
+Recent Advances in Natural Language Processing (RANLP).
+
+Cruz Mata, F. L. 2011. Extraccion de opiniones sobre caractersticas: Un enfoque practico
+adaptado al dominio. Ph.D. thesis, Universidad de Sevilla
+
+Fernandez Anta, A., Morere, P., Nu~nez Chiroque, L., and Santos, A. 2012. Techniques for
+Sentiment Analysis and Topic Detection of Spanish Tweets: Preliminary Report. In:
+TASS 2012 Working Notes.
+
+Pang, B., and L., Lillian. 2008. Opinion Mining and Sentiment Analysis. Hanover, MA,
+USA: now Publishers Inc
+
+Pang, B., Lee, L., and Vaithyanathan, S. 2002. Thumbs up?: sentiment classication
+using machine learning techniques. Pages 79{86 of: Proceedings of the ACL-02 conference on Empirical methods in natural language processing - Volume 10. EMNLP '02.
+Stroudsburg, PA, USA: Association for Computational Linguistics.
+
+Saralegi Urizar, X., and San Vicente Roncal, I. 2012. Detecting Sentiments in Spanish
+Tweets. In: TASS 2012 Working Notes.
+
+Vilares, D., Alonso, M. A., and Gomez-Rodrguez, C. 2013. Supervised Polarity Classi-
+cation of Spanish Tweets based on Linguistic Knowledge. In: Proceedings of the 2013
+ACM symposium on Document engineering. DocEng '13. New York, NY, USA: ACM.
+
+Vilares, D., Alonso, M. A., and Gomez-Rodriguez, C. 2013. A syntactic approach for opinion mining on Spanish reviews.
+http://www.grupolys.org/biblioteca/VilAloGom2013d.pdf
+
+Zhang, C., Zeng, D., Li, J., Wang, F., and Zuo, W. 2009. Sentiment Analysis of Chinese
+Documents: From Sentence to Document Level. Journal of the American Society for
+Information Science and Technology, 60(12), 2474{2487.
+
+http://rua.ua.es/dspace/bitstream/10045/19437/1/tesis_alexandrabalahur.pdf
+
+ https://www.cs.cornell.edu/people/pabo/movie-review-data/

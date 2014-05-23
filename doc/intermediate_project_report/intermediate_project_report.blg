@@ -1,0 +1,48 @@
+This is BibTeX, Version 0.99d (TeX Live 2012/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: intermediate_project_report.aux
+The style file: acl.bst
+Database file #1: references.bib
+Warning--empty journal in fernandez2012
+You've used 11 entries,
+            2490 wiz_defined-function locations,
+            616 strings with 6684 characters,
+and the built_in function-call counts, 4561 in all, are:
+= -- 492
+> -- 165
+< -- 5
++ -- 58
+- -- 54
+* -- 317
+:= -- 727
+add.period$ -- 46
+call.type$ -- 11
+change.case$ -- 69
+chr.to.int$ -- 10
+cite$ -- 12
+duplicate$ -- 206
+empty$ -- 339
+format.name$ -- 67
+if$ -- 971
+int.to.chr$ -- 2
+int.to.str$ -- 0
+missing$ -- 9
+newline$ -- 68
+num.names$ -- 33
+pop$ -- 80
+preamble$ -- 1
+purify$ -- 82
+quote$ -- 0
+skip$ -- 162
+stack$ -- 0
+substring$ -- 215
+swap$ -- 60
+text.length$ -- 5
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 88
+warning$ -- 1
+while$ -- 38
+width$ -- 13
+write$ -- 155
+(There was 1 warning)
