@@ -110,14 +110,23 @@ def create_vectors(input_dir):
             current_file = open(files[i],'r')
 
             # unigram features
-            unigrams = Counter()
+           # unigrams = Counter()
+           # for line in current_file:
+           #     for unigram in line.split():
+           #         unigrams[unigram] += 1
+           # for unigram_feature in unigrams.keys():
+           #     # cut off - only use unigram features that appear at least 4 times
+           #     if unigrams[unigram_feature] >= 4:
+           #         vector.append(unigram_feature)
+
+            # bigram features
+            bigrams = Counter()
             for line in current_file:
-                for unigram in line.split():
-                    unigrams[unigram] += 1
-            for unigram_feature in unigrams.keys():
-                # cut off - only use unigram features that appear at least 4 times
-                if unigrams[unigram_feature] >= 4:
-                    vector.append(unigram_feature)
+                line = line.split()
+                for i in range(1,len(line)):
+                    bigrams[line[i-1]+"-"+line[i]] += 1
+            for bigram_feature in bigrams.keys():
+                vector.append(bigram_feature)
 
             current_file.close()
 
