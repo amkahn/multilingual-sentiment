@@ -39,7 +39,7 @@ def main():
     all_train_vectors,all_test_vectors = create_vectors(input_dir)
 
     if len(all_train_vectors) > 10:
-        sys.stderr.write("ERROR: More than 10 train vectors!!\n")
+        sys.stderr.write("ERROR: More than 10 training sets!!\n")
         sys.exit()
 
     # print train vectors to train.n.vectors.txt in output_dir
@@ -115,7 +115,9 @@ def create_vectors(input_dir):
                 for unigram in line.split():
                     unigrams[unigram] += 1
             for unigram_feature in unigrams.keys():
-                vector.append(unigram_feature)
+                # cut off - only use unigram features that appear at least 4 times
+                if unigrams[unigram_feature] >= 4:
+                    vector.append(unigram_feature)
 
             current_file.close()
 
