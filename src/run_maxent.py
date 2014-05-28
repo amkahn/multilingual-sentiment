@@ -120,13 +120,22 @@ def create_vectors(input_dir):
            #         vector.append(unigram_feature)
 
             # bigram features
-            bigrams = Counter()
+           # bigrams = Counter()
+           # for line in current_file:
+           #     line = line.split()
+           #     for j in range(1,len(line)):
+           #         bigrams[line[j-1]+"-"+line[j]] += 1
+           # for bigram_feature in bigrams.keys():
+           #     vector.append(bigram_feature)
+
+            # trigram features
+            trigrams = Counter()
             for line in current_file:
                 line = line.split()
-                for j in range(1,len(line)):
-                    bigrams[line[j-1]+"-"+line[j]] += 1
-            for bigram_feature in bigrams.keys():
-                vector.append(bigram_feature)
+                for j in range(2,len(line)):
+                    trigrams[line[j-2]+"-"+line[j-1]+"-"+line[j]] += 1
+            for trigram_feature in trigrams.keys():
+                vector.append(trigram_feature)
 
             current_file.close()
 
