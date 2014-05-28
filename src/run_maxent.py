@@ -123,8 +123,8 @@ def create_vectors(input_dir):
             bigrams = Counter()
             for line in current_file:
                 line = line.split()
-                for i in range(1,len(line)):
-                    bigrams[line[i-1]+"-"+line[i]] += 1
+                for j in range(1,len(line)):
+                    bigrams[line[j-1]+"-"+line[j]] += 1
             for bigram_feature in bigrams.keys():
                 vector.append(bigram_feature)
 
