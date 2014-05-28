@@ -1,0 +1,200 @@
+74.txt pos menos 1 huffman 1 la 1 lo 1 comma 1 de 1 más 1 el 1 en 1 por 1 es 1 ? 1 que 1 una 1 . 1 un 1 al 1 no 1 las 1 a 1 su 1 película 1 y 1 transamerica 1 se 1 
+1984.txt pos hierro 1 gigante 1 se 1 la 1 lo 1 comma 1 de 1 historia 1 el 1 en 1 es 1 un 1 que 1 una 1 ( 1 por 1 . 1 los 1 para 1 al 1 del 1 no 1 ) 1 las 1 a 1 su 1 y 1 
+2082.txt pos hace 1 la 1 comma 1 su 1 de 1 más 1 el 1 en 1 es 1 un 1 que 1 una 1 lo 1 con 1 por 1 . 1 los 1 para 1 ha 1 he 1 me 1 haya 1 del 1 no 1 cine 1 las 1 a 1 oldboy 1 y 1 
+3165.txt pos vez 1 eso 1 pero 1 del 1 tan 1 sin 1 las 1 a 1 su 1 si 1 se 1 orfanato 1 la 1 lo 1 comma 1 nada 1 nos 1 más 1 el 1 en 1 todo 1 es 1 que 1 mucho 1 belén 1 inteligencia 1 final 1 está 1 este 1 película 1 manera 1 con 1 ( 1 de 1 muy 1 bien 1 como 1 planos 1 una 1 por 1 bayona 1 . 1 ) 1 y 1 momento 1 hay 1 conmovedora 1 historia 1 o 1 duda 1 los 1 un 1 al 1 film 1 ni 1 no 1 
+2053.txt pos la 1 comma 1 de 1 el 1 en 1 es 1 que 1 cinta 1 una 1 con 1 . 1 `` 1 un 1 del 1 '' 1 no 1 su 1 y 1 
+2432.txt pos la 1 comma 1 de 1 en 1 es 1 solo 1 una 1 . 1 un 1 no 1 y 1 
+3272.txt pos la 1 ( 1 comma 1 por 1 de 1 lynch 1 más 1 el 1 en 1 es 1 experiencia 1 que 1 o 1 con 1 cámara 1 . 1 los 1 para 1 al 1 un 1 del 1 esta 1 film 1 una 1 ) 1 sin 1 las 1 a 1 no 1 película 1 y 1 se 1 
+1309.txt pos papel 1 la 1 vida 1 comma 1 de 1 más 1 el 1 en 1 ? 1 que 1 como 1 una 1 ( 1 con 1 pero 1 por 1 siempre 1 . 1 los 1 a 1 para 1 reeves 1 un 1 del 1 esta 1 ) 1 cine 1 actor 1 las 1 no 1 su 1 y 1 se 1 
+4036.txt pos la 1 ( 1 comma 1 wright 1 el 1 en 1 un 1 que 1 joe 1 como 1 o 1 una 1 con 1 . 1 los 1 al 1 para 1 no 1 ) 1 las 1 a 1 entre 1 su 1 de 1 y 1 se 1 
+405.txt pos pelicula 1 la 1 lo 1 comma 1 el 1 en 1 es 1 solo 1 que 1 como 1 una 1 con 1 por 1 son 1 los 1 las 1 a 1 esta 1 mejor 1 de 1 y 1 
+877.txt pos `` 1 me 1 mi 1 del 1 era 1 pero 1 a 1 su 1 papel 1 la 1 lo 1 comma 1 más 1 el 1 en 1 buena 1 es 1 que 1 director 1 mucho 1 para 1 se 1 escena 1 libro 1 porque 1 de 1 joven 1 muy 1 bien 1 como 1 una 1 con 1 cuando 1 . 1 y 1 sí 1 por 1 pues 1 eso 1 olor 1 o 1 los 1 un 1 al 1 '' 1 film 1 no 1 
+3119.txt pos pearl 1 sin 1 las 1 se 1 la 1 lo 1 comma 1 más 1 el 1 en 1 todo 1 es 1 que 1 a 1 para 1 de 1 no 1 como 1 una 1 por 1 . 1 mundo 1 película 1 y 1 con 1 historia 1 los 1 absolutamente 1 un 1 winterbottom 1 
+257.txt pos pero 1 `` 1 del 1 sin 1 las 1 a 1 su 1 se 1 la 1 comma 1 más 1 el 1 en 1 todo 1 es 1 poco 1 tienen 1 que 1 colinas 1 para 1 este 1 esto 1 y 1 culto 1 de 1 como 1 una 1 remake 1 . 1 fue 1 película 1 con 1 wes 1 nos 1 ojos 1 los 1 películas 1 ha 1 un 1 al 1 '' 1 no 1 original 1 
+2788.txt pos sobre 1 otros 1 del 1 de 1 las 1 a 1 si 1 se 1 la 1 comma 1 más 1 el 1 en 1 es 1 que 1 los 1 para 1 su 1 como 1 una 1 con 1 . 1 película 1 y 1 por 1 o 1 son 1 un 1 al 1 no 1 
+982.txt pos acción 1 aunque 1 casino 1 del 1 sin 1 las 1 a 1 su 1 se 1 la 1 lo 1 comma 1 ya 1 nada 1 james 1 más 1 bond 1 el 1 en 1 es 1 que 1 para 1 este 1 película 1 hace 1 auténtica 1 ( 1 escena 1 de 1 como 1 una 1 con 1 agente 1 tiene 1 . 1 ) 1 y 1 por 1 vesper 1 pues 1 royale 1 o 1 son 1 los 1 ha 1 he 1 un 1 al 1 mejor 1 no 1 
+3090.txt pos la 1 ( 1 comma 1 de 1 más 1 el 1 en 1 es 1 ' 1 muy 1 un 1 del 1 que 1 una 1 con 1 los 1 . 1 `` 1 '' 1 ) 1 evan 1 a 1 seth 1 película 1 y 1 se 1 
+3737.txt pos la 1 comma 1 de 1 el 1 en 1 lee 1 que 1 como 1 una 1 . 1 los 1 me 1 un 1 del 1 ang 1 no 1 las 1 a 1 película 1 y 1 
+1871.txt pos brillante 1 profundo 1 pero 1 me 1 del 1 sin 1 las 1 a 1 su 1 se 1 papel 1 le 1 la 1 lo 1 comma 1 espionaje 1 más 1 el 1 en 1 es 1 así 1 que 1 mucho 1 quizás 1 reparto 1 guión 1 ( 1 realmente 1 increíble 1 de 1 sea 1 como 1 una 1 uno 1 cierto 1 por 1 . 1 buen 1 ) 1 todos 1 ello 1 película 1 y 1 con 1 actor 1 sí 1 niro 1 también 1 pues 1 eso 1 los 1 absolutamente 1 pastor 1 un 1 al 1 mejor 1 film 1 no 1 sólo 1 
+2516.txt pos la 1 lo 1 comma 1 de 1 el 1 en 1 políticos 1 sean 1 es 1 monarquía 1 que 1 como 1 una 1 mismo 1 . 1 los 1 poder 1 un 1 del 1 ni 1 a 1 su 1 si 1 y 1 con 1 se 1 
+3387.txt pos woody 1 la 1 lo 1 comma 1 de 1 el 1 en 1 es 1 sobre 1 que 1 como 1 una 1 . 1 me 1 un 1 va 1 al 1 allen 1 no 1 parece 1 sin 1 las 1 a 1 película 1 y 1 con 1 se 1 
+1375.txt pos vez 1 sus 1 ; 1 pero 1 `` 1 me 1 mi 1 del 1 sabe 1 tan 1 sin 1 su 1 se 1 le 1 la 1 lo 1 comma 1 nos 1 más 1 el 1 en 1 es 1 que 1 a 1 para 1 porque 1 de 1 muy 1 bien 1 como 1 con 1 . 1 señor 1 cine 1 película 1 y 1 zwick 1 o 1 algo 1 son 1 los 1 : 1 ha 1 un 1 usted 1 '' 1 actores 1 no 1 guión 1 
+3041.txt pos sus 1 del 1 a 1 su 1 se 1 la 1 lo 1 comma 1 el 1 en 1 es 1 policía 1 que 1 para 1 con 1 ( 1 de 1 sean 1 después 1 como 1 una 1 por 1 . 1 dave 1 ) 1 hacer 1 película 1 y 1 jimmy 1 los 1 ha 1 un 1 no 1 
+1714.txt pos le 1 la 1 comma 1 nos 1 de 1 más 1 el 1 en 1 una 1 que 1 . 1 los 1 `` 1 '' 1 las 1 a 1 se 1 y 1 
+1318.txt pos terciopelo 1 lynch 1 ( 1 del 1 las 1 a 1 su 1 se 1 la 1 lo 1 comma 1 el 1 en 1 todo 1 es 1 que 1 para 1 al 1 aquí 1 de 1 contar 1 como 1 una 1 con 1 por 1 . 1 mundo 1 ) 1 y 1 nos 1 pero 1 los 1 : 1 un 1 no 1 
+866.txt pos la 1 comma 1 decir 1 de 1 el 1 en 1 es 1 que 1 los 1 un 1 las 1 a 1 y 1 se 1 
+1291.txt pos español 1 público 1 process_cine.out 1 pero 1 `` 1 me 1 del 1 process_cine.sh 1 o 1 ! 1 las 1 a 1 se 1 la 1 lo 1 comma 1 nos 1 el 1 en 1 es 1 que 1 para 1 película 1 dice 1 ( 1 de 1 torrente 1 ser 1 como 1 con 1 . 1 process_cine.err 1 una 1 ) 1 cine 1 todos 1 y 1 process_cine.log 1 cuco 1 por 1 espectador 1 ? 1 los 1 ha 1 un 1 al 1 '' 1 process_cine.py 1 no 1 process_cine.cmd 1 
+4268.txt pos que 1 pero 1 me 1 salvajes’ 1 del 1 las 1 su 1 se 1 forma 1 la 1 lo 1 comma 1 penn 1 más 1 el 1 en 1 es 1 ‘hacia 1 rutas 1 por 1 a 1 para 1 de 1 como 1 una 1 con 1 . 1 y 1 vida 1 los 1 ha 1 un 1 al 1 film 1 no 1 chris 1 
+1536.txt pos la 1 vez 1 comma 1 de 1 en 1 es 1 que 1 donde 1 `` 1 un 1 '' 1 ! 1 una 1 a 1 no 1 su 1 película 1 y 1 
+1240.txt pos sueño 1 la 1 comma 1 un 1 de 1 el 1 en 1 es 1 burt 1 que 1 una 1 con 1 . 1 : 1 para 1 pero 1 lo 1 su 1 y 1 
+1621.txt pos manera 1 la 1 de 1 nos 1 injusticia 1 el 1 en 1 es 1 ; 1 que 1 una 1 con 1 por 1 comma 1 los 1 . 1 ellos 1 documental 1 un 1 ni 1 todos 1 las 1 a 1 y 1 
+2093.txt pos del 1 las 1 a 1 la 1 comma 1 el 1 en 1 que 1 para 1 de 1 muy 1 un 1 una 1 con 1 . 1 y 1 por 1 o 1 los 1 : 1 ha 1 qué 1 
+1705.txt pos la 1 comma 1 de 1 como 1 el 1 en 1 es 1 que 1 lo 1 con 1 por 1 . 1 los 1 para 1 un 1 no 1 a 1 su 1 y 1 se 1 
+2507.txt pos son 1 la 1 lo 1 de 1 español 1 sin 1 el 1 en 1 también 1 es 1 humor 1 ( 1 que 1 como 1 keaton 1 una 1 kung 1 chow 1 con 1 comma 1 . 1 los 1 un 1 del 1 al 1 ! 1 ) 1 las 1 a 1 y 1 se 1 
+3347.txt pos la 1 comma 1 de 1 más 1 zombies 1 el 1 en 1 es 1 sus 1 se 1 que 1 una 1 . 1 los 1 : 1 a 1 para 1 un 1 no 1 shaun 1 las 1 su 1 y 1 
+246.txt pos la 1 comma 1 de 1 más 1 el 1 en 1 es 1 sobre 1 que 1 una 1 con 1 por 1 . 1 los 1 para 1 películas 1 familia 1 un 1 película 1 todos 1 tortuga 1 y 1 se 1 
+2799.txt pos la 1 lo 1 comma 1 de 1 el 1 en 1 es 1 un 1 que 1 una 1 con 1 . 1 me 1 tan 1 no 1 a 1 y 1 se 1 
+4214.txt pos la 1 comma 1 de 1 el 1 en 1 es 1 que 1 una 1 ( 1 por 1 . 1 los 1 `` 1 ha 1 me 1 '' 1 mi 1 un 1 del 1 lo 1 no 1 ) 1 cine 1 a 1 y 1 con 1 se 1 
+2748.txt pos pero 1 del 1 las 1 a 1 su 1 se 1 la 1 lo 1 comma 1 nos 1 el 1 en 1 es 1 que 1 para 1 entre 1 aquí 1 de 1 ser 1 una 1 con 1 por 1 . 1 - 1 película 1 y 1 sí 1 vida 1 hay 1 amor 1 los 1 : 1 familia 1 un 1 al 1 no 1 humanidad 1 
+297.txt pos le 1 la 1 lo 1 comma 1 me 1 de 1 fea 1 chica 1 chico 1 el 1 en 1 es 1 fútbol 1 tiene 1 puede 1 que 1 una 1 con 1 por 1 los 1 . 1 un 1 no 1 parece 1 viola 1 ella 1 las 1 a 1 su 1 y 1 se 1 
+4103.txt pos pero 1 `` 1 del 1 a 1 su 1 se 1 la 1 comma 1 nos 1 el 1 en 1 es 1 que 1 las 1 para 1 escena 1 de 1 como 1 una 1 con 1 por 1 . 1 escenas 1 y 1 lucha 1 o 1 clooney 1 son 1 los 1 un 1 al 1 '' 1 film 1 no 1 
+2617.txt pos la 1 vida 1 comma 1 por 1 de 1 truffaut 1 el 1 en 1 es 1 que 1 como 1 o 1 una 1 personajes 1 con 1 . 1 los 1 para 1 documental 1 un 1 del 1 a 1 película 1 y 1 se 1 
+3721.txt pos comedia 1 la 1 lo 1 comma 1 hay 1 de 1 el 1 en 1 es 1 un 1 acción 1 que 1 como 1 una 1 ( 1 con 1 . 1 no 1 ) 1 a 1 su 1 película 1 y 1 se 1 
+3895.txt pos michael 1 myers 1 del 1 homicida 1 las 1 se 1 la 1 lo 1 comma 1 desde 1 el 1 en 1 haddonfield 1 es 1 que 1 para 1 - 1 ( 1 de 1 como 1 una 1 . 1 cual 1 ) 1 a 1 y 1 los 1 calles 1 un 1 al 1 
+778.txt pos pero 1 `` 1 del 1 tan 1 las 1 a 1 grant 1 su 1 le 1 la 1 lo 1 comma 1 leopardo 1 más 1 el 1 en 1 es 1 hepburn 1 que 1 hawks 1 para 1 esta 1 se 1 ( 1 de 1 una 1 con 1 como 1 . 1 unos 1 ) 1 cine 1 película 1 y 1 por 1 época 1 los 1 : 1 un 1 '' 1 no 1 
+994.txt pos la 1 comma 1 ? 1 de 1 el 1 en 1 ser 1 que 1 como 1 una 1 lo 1 uno 1 . 1 los 1 a 1 al 1 familia 1 un 1 para 1 no 1 es 1 sin 1 todos 1 su 1 y 1 se 1 
+4213.txt pos comma 1 de 1 prima 1 el 1 en 1 es 1 ratos 1 que 1 la 1 por 1 león 1 los 1 . 1 : 1 me 1 te 1 un 1 no 1 ópera 1 a 1 película 1 y 1 
+1008.txt pos la 1 comma 1 más 1 el 1 en 1 es 1 que 1 como 1 nueve 1 una 1 pero 1 cada 1 . 1 historias 1 un 1 al 1 no 1 las 1 a 1 de 1 y 1 con 1 se 1 
+4337.txt pos la 1 comma 1 de 1 el 1 en 1 guerra 1 es 1 que 1 una 1 con 1 por 1 . 1 los 1 un 1 al 1 las 1 a 1 película 1 y 1 
+2383.txt pos la 1 comma 1 el 1 en 1 que 1 una 1 por 1 . 1 los 1 serie 1 del 1 al 1 de 1 a 1 con 1 y 1 
+1531.txt pos la 1 comma 1 de 1 el 1 en 1 que 1 una 1 con 1 como 1 . 1 los 1 `` 1 para 1 un 1 '' 1 todos 1 a 1 su 1 película 1 y 1 
+1943.txt pos la 1 comma 1 de 1 el 1 en 1 que 1 una 1 con 1 por 1 . 1 los 1 un 1 a 1 y 1 se 1 
+1247.txt pos murray 1 hace 1 le 1 la 1 lo 1 comma 1 de 1 el 1 en 1 es 1 bien 1 ? 1 para 1 no 1 viaje 1 una 1 que 1 por 1 . 1 me 1 un 1 del 1 al 1 tan 1 personaje 1 a 1 su 1 película 1 y 1 se 1 
+2887.txt pos murray 1 la 1 comma 1 de 1 el 1 en 1 es 1 que 1 una 1 por 1 `` 1 '' 1 no 1 y 1 a 1 
+4178.txt pos rob 1 michael 1 sus 1 sino 1 pero 1 mitad 1 del 1 halloween 1 las 1 a 1 la 1 lo 1 comma 1 más 1 el 1 en 1 es 1 que 1 final 1 para 1 esta 1 su 1 se 1 aquí 1 ( 1 de 1 como 1 una 1 con 1 por 1 . 1 ) 1 director 1 no 1 película 1 y 1 uno 1 zombie 1 los 1 ha 1 un 1 al 1 original 1 
+1626.txt pos la 1 lo 1 comma 1 un 1 de 1 el 1 en 1 es 1 que 1 como 1 cinta 1 coral 1 una 1 con 1 pero 1 . 1 los 1 del 1 no 1 las 1 a 1 su 1 y 1 se 1 
+2619.txt pos la 1 lo 1 comma 1 de 1 el 1 en 1 todo 1 es 1 que 1 una 1 con 1 por 1 siempre 1 . 1 los 1 un 1 cantidad 1 al 1 no 1 y 1 a 1 película 1 
+776.txt pos sus 1 les 1 viaje 1 social 1 que 1 pero 1 del 1 tan 1 las 1 a 1 su 1 se 1 la 1 lo 1 comma 1 más 1 el 1 en 1 es 1 los 1 para 1 esta 1 ( 1 de 1 país 1 como 1 una 1 con 1 por 1 . 1 ) 1 cine 1 película 1 y 1 historia 1 joad 1 esa 1 : 1 ford 1 un 1 film 1 no 1 
+3677.txt pos la 1 comma 1 de 1 fall 1 el 1 en 1 es 1 sus 1 para 1 como 1 que 1 con 1 por 1 . 1 visual 1 ha 1 un 1 del 1 una 1 sin 1 las 1 a 1 su 1 película 1 y 1 the 1 
+1931.txt pos la 1 comma 1 desde 1 el 1 es 1 verdadera 1 una 1 que 1 . 1 `` 1 '' 1 de 1 película 1 hasta 1 y 1 
+1592.txt pos está 1 ejército 1 sus 1 pero 1 me 1 mi 1 del 1 las 1 si 1 se 1 le 1 la 1 lo 1 comma 1 más 1 el 1 en 1 todo 1 es 1 que 1 a 1 para 1 batallas 1 su 1 dos 1 ( 1 película 1 de 1 como 1 una 1 con 1 por 1 . 1 ) 1 no 1 y 1 nos 1 historia 1 o 1 al 1 los 1 películas 1 un 1 
+3912.txt pos la 1 comma 1 de 1 el 1 en 1 es 1 que 1 una 1 con 1 . 1 los 1 rodean 1 un 1 al 1 no 1 sin 1 a 1 
+3560.txt pos terror 1 hora 1 pero 1 me 1 del 1 las 1 a 1 su 1 se 1 la 1 lo 1 comma 1 ya 1 más 1 el 1 en 1 es 1 rec 1 que 1 mucho 1 ( 1 de 1 una 1 . 1 ) 1 cine 1 hecho 1 película 1 y 1 con 1 por 1 los 1 : 1 ha 1 un 1 al 1 no 1 
+2320.txt pos está 1 sobre 1 del 1 las 1 a 1 su 1 se 1 la 1 lo 1 capote 1 ya 1 más 1 el 1 en 1 crimen 1 todo 1 es 1 que 1 mucho 1 esas 1 para 1 porque 1 de 1 muy 1 como 1 una 1 con 1 comma 1 . 1 éste 1 película 1 y 1 historia 1 ? 1 algo 1 los 1 un 1 al 1 film 1 no 1 
+158.txt pos la 1 comma 1 de 1 el 1 retrato 1 en 1 es 1 bien 1 que 1 como 1 una 1 donde 1 . 1 los 1 `` 1 un 1 '' 1 a 1 y 1 se 1 
+1311.txt pos uno 1 otra 1 decir 1 segmento 1 feria 1 necesita 1 como 1 ente 1 está 1 sus 1 ; 1 aunque 1 escena 1 `` 1 visual 1 esperanza 1 del 1 era 1 sensibilidad 1 tan 1 sin 1 spielberg 1 las 1 a 1 su 1 se 1 le 1 la 1 lo 1 comma 1 madre 1 origen 1 nada 1 cual 1 nos 1 más 1 desde 1 tras 1 el 1 en 1 soledad 1 es 1 nunca 1 azul 1 que 1 obra 1 david 1 mónica 1 inteligencia 1 conciencia 1 para 1 entre 1 final 1 esta 1 personaje 1 género 1 merece 1 hace 1 hada 1 ( 1 de 1 gran 1 momento 1 sentido 1 ser 1 humano 1 sea 1 humana 1 contenido 1 muy 1 artificial 1 solo 1 frente 1 terreno 1 ciertos 1 una 1 por 1 tono 1 tiene 1 . 1 demasiado 1 caso 1 celos 1 discurso 1 ) 1 hecho 1 tiempo 1 película 1 y 1 con 1 porqué 1 complejo 1 vida 1 historia 1 consciente 1 cosas 1 amor 1 ese 1 ? 1 puede 1 o 1 pero 1 sueños 1 los 1 : 1 familia 1 ha 1 un 1 al 1 mundo 1 '' 1 no 1 cuando 1 búsqueda 1 hadas 1 narración 1 
+3025.txt pos horror 1 sus 1 del 1 a 1 su 1 hasta 1 se 1 la 1 lo 1 comma 1 ya 1 más 1 el 1 en 1 es 1 que 1 desmembrados 1 y 1 hace 1 ( 1 de 1 una 1 . 1 ) 1 película 1 the 1 con 1 momento 1 por 1 survival 1 los 1 un 1 al 1 no 1 
+2113.txt pos del 1 `` 1 ! 1 las 1 a 1 si 1 se 1 la 1 comma 1 su 1 el 1 en 1 que 1 para 1 ( 1 de 1 una 1 con 1 por 1 . 1 ) 1 y 1 / 1 ? 1 los 1 : 1 un 1 al 1 mundo 1 '' 1 no 1 guión 1 
+2900.txt pos la 1 comma 1 de 1 más 1 el 1 en 1 que 1 como 1 una 1 soy 1 . 1 los 1 para 1 serie 1 un 1 del 1 film 1 no 1 a 1 película 1 y 1 
+4339.txt pos la 1 ( 1 comma 1 ya 1 nos 1 sin 1 más 1 el 1 en 1 es 1 muy 1 escena 1 sus 1 que 1 una 1 lo 1 por 1 . 1 los 1 : 1 `` 1 un 1 del 1 '' 1 ) 1 de 1 director 1 las 1 a 1 su 1 y 1 dos 1 con 1 buñuel 1 se 1 
+2858.txt pos pero 1 del 1 a 1 su 1 jungla 1 se 1 la 1 lo 1 comma 1 nos 1 el 1 en 1 es 1 que 1 con 1 de 1 punto 1 como 1 una 1 por 1 . 1 película 1 y 1 héroe 1 mcclane 1 ? 1 los 1 un 1 
+652.txt pos quienes 1 sus 1 de 1 militares 1 el 1 en 1 es 1 cómo 1 que 1 como 1 la 1 una 1 con 1 por 1 vuelo 1 comma 1 . 1 los 1 pasajeros 1 para 1 93 1 un 1 del 1 esta 1 al 1 united 1 greengrass 1 las 1 a 1 su 1 y 1 se 1 
+683.txt pos le 1 la 1 ( 1 comma 1 de 1 el 1 en 1 es 1 que 1 como 1 cinta 1 costello 1 sullivan 1 por 1 . 1 los 1 un 1 del 1 para 1 una 1 ) 1 a 1 no 1 su 1 con 1 y 1 se 1 
+545.txt pos comedia 1 la 1 ( 1 comma 1 de 1 más 1 el 1 en 1 todo 1 es 1 ' 1 reitman 1 que 1 como 1 una 1 lo 1 con 1 por 1 . 1 los 1 `` 1 del 1 al 1 '' 1 tan 1 ) 1 año 1 a 1 no 1 su 1 película 1 y 1 se 1 
+4176.txt pos ver 1 la 1 ( 1 comma 1 de 1 una 1 el 1 en 1 está 1 es 1 más 1 que 1 o 1 con 1 por 1 . 1 los 1 `` 1 para 1 ser 1 un 1 del 1 lo 1 no 1 ) 1 las 1 a 1 través 1 su 1 película 1 y 1 se 1 
+1777.txt pos leonidas 1 ver 1 me 1 del 1 ! 1 las 1 a 1 si 1 se 1 le 1 la 1 comma 1 más 1 el 1 en 1 es 1 que 1 para 1 persas 1 de 1 como 1 una 1 uno 1 . 1 300′ 1 película 1 y 1 con 1 por 1 esa 1 ? 1 violencia 1 los 1 un 1 no 1 
+868.txt pos la 1 comma 1 libro 1 yo 1 de 1 el 1 en 1 que 1 hubiera 1 . 1 los 1 me 1 no 1 película 1 y 1 
+3754.txt pos la 1 comma 1 de 1 nos 1 el 1 en 1 que 1 una 1 con 1 buen 1 a 1 y 1 
+3335.txt pos la 1 comma 1 de 1 el 1 en 1 es 1 sus 1 que 1 una 1 con 1 por 1 . 1 retrato 1 un 1 del 1 no 1 las 1 a 1 su 1 y 1 se 1 
+684.txt pos la 1 ( 1 comma 1 de 1 más 1 el 1 en 1 es 1 que 1 como 1 una 1 con 1 por 1 . 1 `` 1 me 1 un 1 '' 1 ) 1 y 1 
+814.txt pos sus 1 las 1 a 1 su 1 se 1 la 1 lo 1 comma 1 el 1 en 1 es 1 que 1 para 1 y 1 de 1 como 1 una 1 quien 1 por 1 . 1 blair 1 película 1 con 1 los 1 : 1 un 1 no 1 
+1682.txt pos la 1 comma 1 de 1 más 1 velo 1 el 1 en 1 es 1 que 1 una 1 ( 1 con 1 como 1 por 1 donde 1 pintado 1 . 1 los 1 pero 1 un 1 del 1 esta 1 film 1 no 1 ) 1 guión 1 las 1 a 1 película 1 y 1 se 1 
+2823.txt pos segmento 1 ? 1 `` 1 del 1 tarantino 1 tan 1 sin 1 a 1 su 1 se 1 le 1 la 1 lo 1 comma 1 más 1 el 1 en 1 es 1 poco 1 que 1 sabido 1 este 1 dos 1 ( 1 de 1 muy 1 como 1 una 1 . 1 las 1 mike 1 ) 1 stuntman 1 entre 1 película 1 y 1 víctimas 1 grindhouse 1 los 1 : 1 ha 1 un 1 '' 1 no 1 
+629.txt pos le 1 la 1 comma 1 hay 1 de 1 el 1 en 1 ser 1 es 1 policía 1 que 1 una 1 lo 1 pero 1 por 1 tiene 1 . 1 para 1 un 1 esta 1 no 1 las 1 a 1 película 1 y 1 dos 1 con 1 se 1 
+1544.txt pos la 1 ( 1 comma 1 de 1 más 1 el 1 en 1 inland 1 empire 1 es 1 que 1 sonido 1 una 1 lo 1 con 1 por 1 . 1 aunque 1 a 1 `` 1 sensaciones 1 me 1 un 1 del 1 al 1 '' 1 no 1 ) 1 cine 1 las 1 su 1 película 1 y 1 se 1 
+1595.txt pos la 1 lo 1 escena 1 de 1 nos 1 en 1 todo 1 es 1 nuevo 1 que 1 ficción 1 o 1 una 1 con 1 el 1 comma 1 desesperación 1 pero 1 . 1 un 1 del 1 al 1 film 1 cine 1 parece 1 las 1 a 1 película 1 y 1 se 1 
+17.txt pos la 1 ( 1 comma 1 de 1 más 1 el 1 en 1 que 1 por 1 . 1 los 1 `` 1 para 1 : 1 medicinas 1 '' 1 ) 1 las 1 a 1 y 1 se 1 
+359.txt pos ver 1 agua 1 sus 1 del 1 a 1 su 1 si 1 se 1 forma 1 la 1 lo 1 comma 1 más 1 el 1 en 1 es 1 que 1 cada 1 para 1 shyamalan 1 de 1 joven 1 muy 1 bien 1 una 1 con 1 por 1 tiene 1 . 1 qué 1 cine 1 película 1 y 1 historia 1 pero 1 donde 1 los 1 películas 1 un 1 al 1 cuento 1 no 1 
+2686.txt pos horror 1 sobre 1 ; 1 `` 1 del 1 cual 1 las 1 a 1 se 1 la 1 lo 1 comma 1 el 1 en 1 es 1 que 1 su 1 - 1 de 1 una 1 con 1 . 1 película 1 y 1 por 1 o 1 los 1 muerte 1 un 1 al 1 '' 1 
+3761.txt pos del 1 las 1 a 1 su 1 se 1 le 1 la 1 lo 1 comma 1 más 1 el 1 en 1 es 1 así 1 poco 1 que 1 los 1 abeja 1 y 1 ( 1 de 1 bee 1 movie 1 bien 1 como 1 una 1 con 1 . 1 escenas 1 al 1 parte 1 ) 1 película 1 por 1 algo 1 personajes 1 un 1 `` 1 '' 1 no 1 
+116.txt pos la 1 comma 1 de 1 el 1 en 1 que 1 . 1 los 1 para 1 me 1 las 1 a 1 y 1 
+4282.txt pos la 1 comma 1 corrientes 1 de 1 el 1 en 1 que 1 una 1 algo 1 con 1 . 1 los 1 duda 1 un 1 del 1 tan 1 no 1 cine 1 sin 1 hombres 1 las 1 a 1 su 1 y 1 se 1 
+201.txt pos la 1 de 1 el 1 en 1 es 1 sus 1 sobre 1 carta 1 que 1 una 1 lo 1 con 1 por 1 comma 1 . 1 los 1 `` 1 '' 1 encontrar 1 un 1 esta 1 al 1 para 1 no 1 las 1 a 1 don 1 su 1 película 1 y 1 se 1 
+3639.txt pos la 1 comma 1 de 1 el 1 en 1 culo 1 que 1 aunque 1 una 1 por 1 : 1 me 1 ni 1 no 1 a 1 su 1 con 1 
+821.txt pos la 1 ( 1 comma 1 ya 1 de 1 más 1 el 1 en 1 ser 1 todo 1 es 1 muy 1 sobre 1 que 1 una 1 con 1 por 1 pero 1 . 1 los 1 final 1 al 1 un 1 del 1 no 1 ) 1 nolan 1 a 1 y 1 se 1 
+453.txt pos la 1 ( 1 comma 1 de 1 el 1 en 1 es 1 un 1 que 1 una 1 . 1 los 1 `` 1 abrams 1 '' 1 no 1 ) 1 las 1 a 1 su 1 y 1 
+1099.txt pos la 1 comma 1 de 1 en 1 que 1 una 1 . 1 no 1 y 1 
+795.txt pos woody 1 mejores 1 la 1 lo 1 comma 1 de 1 el 1 en 1 es 1 un 1 sus 1 como 1 una 1 que 1 . 1 `` 1 '' 1 allen 1 no 1 a 1 se 1 y 1 
+1903.txt pos la 1 comma 1 me 1 de 1 en 1 . 1 un 1 y 1 
+3645.txt pos la 1 comma 1 de 1 el 1 en 1 que 1 una 1 . 1 `` 1 me 1 un 1 del 1 a 1 entre 1 
+454.txt pos la 1 lo 1 comma 1 el 1 en 1 un 1 que 1 como 1 con 1 al 1 . 1 `` 1 para 1 del 1 '' 1 sin 1 de 1 a 1 y 1 se 1 
+1968.txt neg la 1 lo 1 comma 1 de 1 una 1 hora 1 el 1 en 1 es 1 más 1 que 1 con 1 . 1 los 1 final 1 a 1 ha 1 spiderman 1 un 1 al 1 personaje 1 no 1 todo 1 su 1 película 1 si 1 raimi 1 y 1 se 1 
+2959.txt neg note 1 la 1 lo 1 comma 1 película 1 de 1 el 1 en 1 todo 1 es 1 ' 1 que 1 como 1 ( 1 por 1 . 1 los 1 ha 1 un 1 del 1 'death 1 no 1 ) 1 sin 1 a 1 su 1 manga 1 y 1 se 1 
+73.txt neg la 1 comma 1 de 1 el 1 está 1 licántropos 1 que 1 una 1 con 1 los 1 pero 1 . 1 un 1 vampiros 1 no 1 a 1 y 1 se 1 
+2764.txt neg la 1 comma 1 de 1 el 1 que 1 . 1 me 1 del 1 y 1 
+1210.txt neg maría 1 marido 1 `` 1 me 1 del 1 tan 1 a 1 su 1 ) 1 se 1 le 1 la 1 lo 1 comma 1 ya 1 más 1 el 1 en 1 todo 1 es 1 ' 1 que 1 antonieta 1 para 1 versalles 1 personaje 1 sofía 1 ( 1 de 1 como 1 una 1 . 1 coppola 1 película 1 y 1 con 1 los 1 : 1 un 1 al 1 '' 1 no 1 
+183.txt neg la 1 comma 1 de 1 el 1 en 1 es 1 que 1 como 1 con 1 por 1 pero 1 . 1 los 1 : 1 `` 1 un 1 del 1 al 1 '' 1 a 1 su 1 y 1 se 1 
+3937.txt neg la 1 comma 1 te 1 de 1 el 1 en 1 es 1 que 1 ( 1 . 1 los 1 : 1 me 1 pecio 1 un 1 para 1 no 1 ) 1 las 1 a 1 película 1 si 1 y 1 se 1 
+4238.txt neg la 1 comma 1 de 1 el 1 en 1 es 1 muy 1 puede 1 que 1 una 1 con 1 . 1 los 1 para 1 un 1 a 1 película 1 y 1 se 1 
+294.txt neg la 1 comma 1 te 1 ya 1 de 1 el 1 en 1 es 1 que 1 una 1 . 1 a 1 para 1 tokyo 1 un 1 su 1 película 1 si 1 y 1 se 1 
+533.txt neg decir 1 me 1 está 1 aunque 1 claro 1 pero 1 capra 1 del 1 ! 1 las 1 a 1 su 1 se 1 la 1 lo 1 comma 1 más 1 el 1 en 1 todo 1 es 1 ' 1 que 1 para 1 película 1 buff 1 y 1 ( 1 de 1 muy 1 como 1 con 1 por 1 tiene 1 una 1 ) 1 todos 1 sí 1 puede 1 mismo 1 . 1 los 1 un 1 al 1 film 1 ni 1 no 1 sandler 1 
+2559.txt neg la 1 ( 1 comma 1 de 1 el 1 en 1 que 1 una 1 los 1 `` 1 un 1 al 1 '' 1 ) 1 película 1 y 1 se 1 
+2138.txt neg la 1 lo 1 comma 1 de 1 el 1 en 1 un 1 que 1 una 1 . 1 los 1 al 1 las 1 a 1 y 1 
+3778.txt neg la 1 comma 1 de 1 el 1 en 1 que 1 con 1 por 1 . 1 los 1 `` 1 un 1 del 1 '' 1 las 1 a 1 su 1 y 1 
+4005.txt neg la 1 lo 1 comma 1 de 1 el 1 en 1 es 1 que 1 como 1 con 1 por 1 . 1 ha 1 un 1 del 1 no 1 parece 1 a 1 su 1 y 1 se 1 
+3156.txt neg la 1 comma 1 de 1 el 1 en 1 que 1 una 1 ( 1 `` 1 me 1 '' 1 no 1 ) 1 a 1 y 1 
+2716.txt neg la 1 comma 1 de 1 el 1 en 1 imagen 1 es 1 narración 1 del 1 que 1 como 1 o 1 una 1 ( 1 con 1 pero 1 . 1 los 1 índole 1 un 1 al 1 no 1 ) 1 sin 1 a 1 película 1 y 1 se 1 
+656.txt neg la 1 lo 1 comma 1 por 1 el 1 en 1 más 1 tipo 1 ? 1 que 1 como 1 una 1 ( 1 con 1 este 1 . 1 los 1 para 1 un 1 del 1 al 1 no 1 ) 1 es 1 todos 1 de 1 las 1 a 1 película 1 y 1 se 1 
+3945.txt neg hace 1 la 1 ( 1 comma 1 peludo 1 de 1 más 1 el 1 es 1 muy 1 que 1 una 1 os 1 con 1 por 1 . 1 : 1 un 1 lulú 1 no 1 ) 1 ojete 1 a 1 película 1 y 1 se 1 
+2957.txt neg 'nana 1 la 1 comma 1 de 1 el 1 en 1 es 1 ' 1 que 1 como 1 universo 1 son 1 . 1 los 1 `` 1 del 1 '' 1 bastante 1 las 1 no 1 y 1 sólo 1 manga 1 
+2144.txt neg lo 1 comma 1 de 1 el 1 en 1 es 1 ' 1 ? 1 que 1 la 1 o 1 una 1 ( 1 por 1 pero 1 . 1 los 1 un 1 del 1 las 1 a 1 no 1 ) 1 y 1 se 1 
+465.txt neg la 1 comma 1 nada 1 de 1 más 1 el 1 es 1 que 1 una 1 con 1 pero 1 me 1 no 1 . 1 a 1 y 1 
+1727.txt neg la 1 comma 1 de 1 historia 1 el 1 en 1 está 1 que 1 como 1 una 1 profundo 1 por 1 . 1 los 1 glory 1 un 1 del 1 of 1 no 1 las 1 a 1 y 1 con 1 se 1 
+772.txt neg la 1 lo 1 comma 1 el 1 ser 1 sobre 1 que 1 una 1 . 1 los 1 a 1 me 1 un 1 sentimientos 1 de 1 película 1 y 1 
+1893.txt neg la 1 comma 1 el 1 en 1 que 1 o 1 una 1 . 1 : 1 un 1 del 1 no 1 de 1 y 1 
+1346.txt neg la 1 comma 1 de 1 una 1 más 1 el 1 en 1 es 1 sus 1 que 1 como 1 o 1 con 1 por 1 . 1 los 1 para 1 verhoeven 1 un 1 del 1 tan 1 las 1 a 1 y 1 
+2986.txt neg comedia 1 la 1 comma 1 de 1 más 1 el 1 en 1 es 1 fútbol 1 que 1 una 1 con 1 por 1 . 1 los 1 a 1 ha 1 un 1 del 1 deporte 1 situaciones 1 pitando 1 no 1 las 1 y 1 se 1 
+1845.txt neg la 1 comma 1 de 1 el 1 en 1 es 1 que 1 una 1 soderbergh 1 por 1 . 1 los 1 `` 1 para 1 '' 1 no 1 las 1 película 1 y 1 con 1 se 1 
+1056.txt neg la 1 lo 1 nada 1 de 1 peor 1 el 1 en 1 todo 1 es 1 así 1 un 1 que 1 o 1 una 1 con 1 comma 1 pero 1 . 1 me 1 película 1 no 1 a 1 su 1 y 1 
+314.txt neg la 1 ( 1 comma 1 de 1 una 1 en 1 que 1 con 1 `` 1 '' 1 ) 1 su 1 y 1 
+1087.txt neg está 1 sobre 1 `` 1 documental 1 visual 1 del 1 cual 1 las 1 a 1 su 1 se 1 la 1 lo 1 comma 1 ya 1 nos 1 más 1 el 1 en 1 es 1 que 1 realidad 1 para 1 babel 1 ( 1 de 1 muy 1 un 1 no 1 una 1 por 1 tiene 1 . 1 ) 1 cine 1 entre 1 película 1 y 1 con 1 hay 1 historia 1 eso 1 pero 1 los 1 películas 1 al 1 '' 1 
+2635.txt neg ; 1 `` 1 del 1 las 1 a 1 su 1 se 1 le 1 la 1 lo 1 comma 1 nos 1 el 1 en 1 es 1 que 1 por 1 para 1 ( 1 de 1 un 1 como 1 una 1 . 1 al 1 ) 1 película 1 y 1 historia 1 o 1 los 1 '' 1 no 1 sólo 1 
+775.txt neg la 1 lo 1 comma 1 ya 1 de 1 nos 1 más 1 el 1 en 1 es 1 muy 1 bien 1 un 1 que 1 como 1 una 1 con 1 . 1 `` 1 del 1 '' 1 propuesta 1 bastante 1 no 1 personaje 1 y 1 a 1 se 1 
+1678.txt neg la 1 comma 1 de 1 una 1 el 1 en 1 que 1 como 1 ( 1 con 1 . 1 los 1 no 1 ) 1 a 1 y 1 se 1 
+1839.txt neg la 1 comma 1 de 1 el 1 en 1 que 1 una 1 ( 1 . 1 los 1 a 1 un 1 del 1 bodrio 1 no 1 ) 1 las 1 y 1 con 1 se 1 
+3009.txt neg veinte 1 del 1 tan 1 las 1 a 1 su 1 se 1 la 1 comma 1 el 1 en 1 es 1 que 1 ‘la 1 para 1 ( 1 de 1 como 1 una 1 con 1 . 1 ) 1 película 1 y 1 minutos 1 por 1 más 1 ese 1 o 1 los 1 ha 1 un 1 
+4002.txt neg la 1 comma 1 de 1 historia 1 más 1 el 1 en 1 es 1 que 1 una 1 lo 1 por 1 mucho 1 . 1 los 1 ha 1 un 1 esta 1 no 1 parte 1 a 1 su 1 y 1 se 1 
+230.txt neg la 1 ( 1 comma 1 de 1 el 1 sus 1 que 1 como 1 con 1 . 1 los 1 final 1 un 1 una 1 ) 1 a 1 y 1 se 1 
+1604.txt neg sobre 1 me 1 mi 1 las 1 a 1 si 1 se 1 la 1 lo 1 comma 1 más 1 el 1 en 1 es 1 que 1 por 1 luego 1 ( 1 de 1 ser 1 como 1 con 1 . 1 qué 1 al 1 casa 1 una 1 ) 1 cine 1 y 1 uno 1 ojos 1 puede 1 o 1 los 1 todavía 1 ha 1 un 1 ah 1 no 1 grito 1 
+2711.txt neg la 1 ( 1 comma 1 de 1 más 1 el 1 en 1 es 1 que 1 con 1 . 1 los 1 `` 1 me 1 un 1 '' 1 no 1 ) 1 cine 1 las 1 a 1 y 1 se 1 
+651.txt neg la 1 lo 1 comma 1 ? 1 porque 1 de 1 el 1 en 1 es 1 más 1 que 1 o 1 una 1 ( 1 por 1 . 1 los 1 qué 1 a 1 `` 1 un 1 del 1 '' 1 no 1 película 1 ) 1 con 1 y 1 se 1 
+3942.txt neg hacia 1 la 1 lo 1 comma 1 hermanos 1 de 1 una 1 más 1 el 1 en 1 ser 1 es 1 que 1 ( 1 . 1 los 1 anderson 1 a 1 para 1 tren 1 un 1 del 1 tres 1 al 1 no 1 ) 1 - 1 entre 1 su 1 y 1 con 1 se 1 
+3246.txt neg la 1 comma 1 por 1 de 1 más 1 el 1 en 1 es 1 muy 1 que 1 como 1 una 1 con 1 . 1 `` 1 un 1 del 1 '' 1 no 1 cine 1 a 1 película 1 si 1 y 1 se 1 
+127.txt neg pelicula 1 han 1 lo 1 comma 1 ya 1 de 1 da 1 el 1 en 1 para 1 es 1 muy 1 ice 1 que 1 como 1 la 1 o 1 una 1 uno 1 al 1 por 1 son 1 igual 1 . 1 los 1 2 1 un 1 esta 1 esto 1 no 1 pero 1 sin 1 las 1 a 1 age 1 y 1 con 1 se 1 
+1513.txt neg la 1 lo 1 comma 1 de 1 más 1 el 1 en 1 es 1 sobre 1 que 1 una 1 con 1 por 1 los 1 . 1 motorista 1 un 1 del 1 ni 1 no 1 a 1 su 1 película 1 y 1 se 1 
+4220.txt neg la 1 comma 1 de 1 más 1 el 1 en 1 es 1 que 1 una 1 . 1 los 1 para 1 un 1 del 1 no 1 las 1 a 1 y 1 se 1 
+3064.txt neg la 1 comma 1 de 1 más 1 el 1 en 1 es 1 poco 1 que 1 por 1 con 1 . 1 los 1 un 1 no 1 a 1 y 1 se 1 
+1096.txt neg la 1 comma 1 de 1 rocky 1 el 1 en 1 cosa 1 es 1 que 1 una 1 con 1 por 1 leyenda 1 . 1 los 1 `` 1 para 1 un 1 del 1 pero 1 '' 1 no 1 las 1 a 1 su 1 película 1 y 1 se 1 
+3877.txt neg menos 1 resulta 1 pueblo 1 del 1 pero 1 vampiros 1 cual 1 las 1 a 1 su 1 si 1 se 1 le 1 la 1 comma 1 más 1 el 1 en 1 es 1 que 1 para 1 lugar 1 ( 1 escena 1 de 1 debe 1 como 1 una 1 con 1 por 1 . 1 parte 1 ) 1 cine 1 y 1 slade 1 historia 1 durante 1 ese 1 personajes 1 género 1 los 1 un 1 al 1 film 1 no 1 
+2990.txt neg la 1 lo 1 de 1 el 1 en 1 ? 1 que 1 con 1 por 1 comma 1 . 1 los 1 a 1 un 1 no 1 cine 1 hacer 1 y 1 se 1 
+1885.txt neg le 1 la 1 lo 1 comma 1 de 1 más 1 el 1 en 1 es 1 esa 1 que 1 con 1 pero 1 . 1 los 1 `` 1 sorpresa 1 ha 1 un 1 '' 1 no 1 las 1 a 1 y 1 se 1 
+764.txt neg la 1 lo 1 comma 1 más 1 el 1 en 1 es 1 sus 1 ? 1 que 1 una 1 con 1 . 1 : 1 un 1 no 1 de 1 las 1 a 1 su 1 y 1 se 1 
+4378.txt neg la 1 comma 1 de 1 el 1 en 1 que 1 como 1 con 1 por 1 . 1 un 1 del 1 una 1 a 1 su 1 y 1 se 1 
+1502.txt neg la 1 comma 1 de 1 en 1 klimt 1 que 1 como 1 una 1 con 1 los 1 . 1 un 1 tan 1 las 1 a 1 su 1 película 1 y 1 
+2417.txt neg cuatro 1 comma 1 otra 1 de 1 el 1 en 1 que 1 la 1 pero 1 . 1 los 1 al 1 ni 1 no 1 las 1 a 1 si 1 y 1 sólo 1 se 1 
+2361.txt neg del 1 sin 1 las 1 a 1 su 1 se 1 la 1 lo 1 comma 1 más 1 el 1 en 1 es 1 taxidermia 1 que 1 para 1 esta 1 ( 1 de 1 ser 1 como 1 una 1 por 1 . 1 ) 1 y 1 con 1 hay 1 o 1 los 1 : 1 un 1 al 1 no 1 
+379.txt neg estructura 1 del 1 las 1 su 1 se 1 la 1 lo 1 comma 1 nos 1 más 1 donde 1 el 1 en 1 es 1 que 1 a 1 película 1 hace 1 ( 1 de 1 como 1 una 1 con 1 por 1 tiene 1 . 1 al 1 ) 1 y 1 tanto 1 ese 1 o 1 mismo 1 los 1 : 1 alatriste 1 un 1 no 1 
+1828.txt neg la 1 comma 1 de 1 chorra 1 en 1 un 1 que 1 o 1 ( 1 por 1 no 1 ) 1 y 1 
+3985.txt neg lo 1 comma 1 de 1 más 1 el 1 en 1 que 1 la 1 `` 1 '' 1 televisiva 1 ni 1 una 1 a 1 y 1 
+2862.txt neg le 1 la 1 ( 1 comma 1 de 1 el 1 en 1 es 1 humor 1 ? 1 que 1 como 1 con 1 primera 1 los 1 . 1 para 1 dios 1 me 1 un 1 esta 1 al 1 no 1 ) 1 a 1 película 1 si 1 y 1 se 1 
+2410.txt neg la 1 ( 1 comma 1 por 1 de 1 el 1 en 1 que 1 como 1 con 1 cuando 1 son 1 . 1 los 1 efectos 1 para 1 ha 1 me 1 un 1 ) 1 a 1 y 1 
+3631.txt neg la 1 comma 1 de 1 el 1 en 1 es 1 que 1 una 1 lo 1 con 1 . 1 pero 1 : 1 secuela 1 me 1 un 1 al 1 no 1 a 1 película 1 si 1 y 1 se 1 
+3196.txt neg la 1 comma 1 de 1 el 1 en 1 es 1 que 1 una 1 . 1 no 1 y 1 se 1 
+3147.txt neg orfanato 1 la 1 comma 1 terror 1 de 1 más 1 el 1 en 1 es 1 les 1 que 1 una 1 por 1 . 1 los 1 del 1 al 1 no 1 cine 1 y 1 a 1 
+1273.txt neg otro 1 le 1 la 1 lo 1 ladrón 1 porque 1 cuando 1 de 1 ? 1 el 1 en 1 es 1 carta 1 ella 1 puede 1 que 1 una 1 con 1 pero 1 por 1 comma 1 tiene 1 . 1 los 1 `` 1 para 1 ha 1 hitchcock 1 bebé 1 un 1 del 1 al 1 '' 1 nazi 1 no 1 pareja 1 a 1 su 1 y 1 dos 1 se 1 
+2599.txt neg porqué 1 la 1 lo 1 comma 1 de 1 el 1 en 1 es 1 muy 1 que 1 ( 1 por 1 pera 1 pero 1 . 1 los 1 me 1 : 1 un 1 actores 1 no 1 a 1 ) 1 y 1 se 1 
+4303.txt neg la 1 lo 1 comma 1 de 1 el 1 en 1 está 1 todo 1 es 1 ; 1 que 1 ( 1 con 1 por 1 los 1 pero 1 . 1 para 1 un 1 va 1 al 1 y 1 ! 1 no 1 ) 1 a 1 se 1 
+1091.txt neg sofia 1 la 1 comma 1 hay 1 ya 1 de 1 más 1 el 1 en 1 es 1 que 1 borrón 1 una 1 con 1 al 1 por 1 antonieta 1 . 1 coppola 1 un 1 del 1 no 1 las 1 a 1 su 1 y 1 se 1 
+2997.txt neg me 1 ; 1 del 1 sin 1 las 1 a 1 se 1 la 1 lo 1 comma 1 más 1 el 1 en 1 es 1 que 1 y 1 ( 1 pensar 1 reportaje 1 de 1 como 1 una 1 con 1 por 1 . 1 ) 1 todos 1 película 1 cuando 1 al 1 pero 1 los 1 un 1 `` 1 '' 1 ni 1 no 1 
+3402.txt neg la 1 comma 1 de 1 más 1 el 1 en 1 que 1 los 1 `` 1 me 1 al 1 '' 1 y 1 
+1882.txt neg la 1 comma 1 hay 1 de 1 el 1 o 1 una 1 que 1 con 1 como 1 . 1 los 1 un 1 del 1 no 1 las 1 a 1 y 1 
+2534.txt neg la 1 comma 1 de 1 nos 1 el 1 en 1 muy 1 que 1 shrek 1 con 1 por 1 . 1 los 1 un 1 esta 1 a 1 y 1 
+474.txt neg la 1 lo 1 comma 1 de 1 el 1 en 1 es 1 que 1 pero 1 . 1 para 1 un 1 del 1 no 1 las 1 y 1 
+1040.txt neg la 1 comma 1 de 1 el 1 que 1 una 1 por 1 . 1 las 1 a 1 su 1 y 1 
+3715.txt neg la 1 comma 1 de 1 en 1 es 1 que 1 una 1 . 1 los 1 `` 1 '' 1 mejor 1 ! 1 película 1 
+3528.txt neg disney 1 del 1 tan 1 y 1 las 1 a 1 la 1 comma 1 más 1 el 1 en 1 es 1 princesa 1 que 1 para 1 se 1 ( 1 de 1 como 1 una 1 con 1 por 1 . 1 ) 1 historia 1 nueva 1 o 1 los 1 un 1 cuento 1 no 1 
+2368.txt neg la 1 lo 1 28 1 comma 1 ya 1 de 1 más 1 el 1 en 1 es 1 después 1 una 1 que 1 con 1 por 1 . 1 los 1 secuela 1 al 1 un 1 ni 1 no 1 a 1 su 1 y 1 se 1 
+370.txt neg coll 1 le 1 la 1 comma 1 de 1 más 1 el 1 en 1 es 1 muy 1 que 1 por 1 . 1 un 1 película 1 no 1 tip 1 las 1 a 1 y 1 
+1744.txt neg pang 1 la 1 lo 1 comma 1 sensación 1 de 1 más 1 el 1 en 1 todo 1 es 1 sus 1 ? 1 que 1 había 1 por 1 pero 1 . 1 los 1 ha 1 un 1 esta 1 al 1 no 1 visto 1 a 1 película 1 y 1 the 1 se 1 
+1453.txt neg la 1 lo 1 comma 1 de 1 más 1 el 1 en 1 es 1 que 1 no 1 con 1 . 1 los 1 d'amore 1 secuela 1 a 1 un 1 manuale 1 su 1 y 1 se 1 
+3306.txt neg la 1 tu 1 comma 1 de 1 el 1 en 1 es 1 que 1 como 1 años 1 o 1 una 1 . 1 los 1 para 1 un 1 del 1 no 1 cine 1 las 1 a 1 su 1 si 1 y 1 con 1 se 1 
+3767.txt neg han 1 la 1 comma 1 el 1 en 1 es 1 que 1 una 1 remake 1 con 1 por 1 soy 1 leyenda 1 . 1 los 1 `` 1 un 1 del 1 '' 1 de 1 a 1 no 1 película 1 y 1 se 1 
+2680.txt neg la 1 lo 1 comma 1 de 1 nos 1 más 1 el 1 es 1 ? 1 que 1 una 1 por 1 son 1 en 1 los 1 . 1 a 1 no 1 las 1 su 1 película 1 y 1 se 1 
+143.txt neg la 1 lo 1 de 1 el 1 en 1 es 1 no 1 como 1 una 1 ( 1 que 1 con 1 por 1 comma 1 . 1 un 1 del 1 al 1 ) 1 las 1 a 1 su 1 y 1 se 1 
+4229.txt neg la 1 comma 1 el 1 en 1 que 1 por 1 . 1 los 1 un 1 del 1 no 1 de 1 a 1 y 1 se 1 
+3692.txt neg la 1 de 1 el 1 en 1 es 1 que 1 para 1 un 1 del 1 no 1 y 1 
+254.txt neg le 1 la 1 comma 1 de 1 más 1 el 1 en 1 está 1 del 1 ? 1 que 1 con 1 por 1 pero 1 . 1 los 1 para 1 me 1 un 1 al 1 superman 1 no 1 es 1 a 1 dado 1 su 1 y 1 se 1 
+2314.txt neg la 1 ( 1 comma 1 de 1 el 1 en 1 es 1 que 1 como 1 una 1 . 1 los 1 negro 1 un 1 del 1 al 1 no 1 ) 1 cine 1 a 1 su 1 y 1 se 1 
+808.txt neg la 1 comma 1 de 1 una 1 más 1 el 1 en 1 es 1 que 1 por 1 . 1 los 1 un 1 al 1 no 1 las 1 a 1 y 1 
+1902.txt neg la 1 comma 1 de 1 historia 1 el 1 en 1 es 1 tuya 1 josé 1 una 1 ( 1 siempre 1 . 1 los 1 un 1 ) 1 que 1 a 1 su 1 y 1 
+986.txt neg vamos 1 pero 1 `` 1 me 1 las 1 a 1 su 1 se 1 la 1 lo 1 comma 1 nos 1 más 1 el 1 en 1 eragon 1 todo 1 es 1 que 1 para 1 hasta 1 porque 1 de 1 bien 1 un 1 como 1 una 1 por 1 qué 1 cine 1 y 1 con 1 ? 1 tiene 1 producciones 1 o 1 . 1 los 1 al 1 '' 1 no 1 
+2313.txt neg `` 1 del 1 a 1 su 1 se 1 la 1 lo 1 comma 1 el 1 en 1 que 1 para 1 productores 1 ( 1 de 1 una 1 con 1 . 1 ) 1 película 1 y 1 por 1 historia 1 ? 1 los 1 un 1 '' 1 no 1 año 1 sólo 1 
+3553.txt neg la 1 lo 1 comma 1 por 1 de 1 una 1 el 1 en 1 ser 1 es 1 sobre 1 que 1 le 1 con 1 pero 1 son 1 . 1 los 1 un 1 ni 1 no 1 a 1 beowulf 1 su 1 y 1 se 1 
+195.txt neg código 1 filme 1 `` 1 del 1 las 1 a 1 su 1 si 1 se 1 la 1 lo 1 más 1 el 1 en 1 es 1 que 1 realidad 1 para 1 y 1 ( 1 de 1 da 1 un 1 una 1 con 1 por 1 comma 1 . 1 vinci 1 demasiado 1 ) 1 película 1 historia 1 o 1 los 1 '' 1 no 1 
+1206.txt neg la 1 comma 1 acerca 1 de 1 más 1 el 1 en 1 ser 1 es 1 que 1 como 1 una 1 por 1 los 1 . 1 a 1 un 1 no 1 su 1 y 1 
+3879.txt neg la 1 comma 1 de 1 el 1 en 1 que 1 . 1 los 1 un 1 no 1 a 1 su 1 se 1 
+1049.txt neg 24 1 la 1 ( 1 comma 1 ya 1 nada 1 de 1 más 1 el 1 en 1 es 1 que 1 como 1 una 1 por 1 pero 1 . 1 `` 1 serie 1 un 1 no 1 ) 1 a 1 película 1 y 1 
+138.txt neg la 1 comma 1 de 1 una 1 el 1 en 1 más 1 que 1 como 1 con 1 por 1 . 1 los 1 `` 1 me 1 un 1 tarantino 1 las 1 a 1 su 1 película 1 y 1 se 1 
+4283.txt neg ozores 1 otro 1 la 1 ( 1 comma 1 de 1 el 1 en 1 es 1 sus 1 ? 1 que 1 una 1 lo 1 con 1 por 1 tiene 1 . 1 los 1 : 1 `` 1 para 1 mariano 1 ha 1 me 1 un 1 '' 1 no 1 ) 1 a 1 su 1 película 1 si 1 y 1 se 1 
+3016.txt neg la 1 lo 1 comma 1 de 1 más 1 el 1 que 1 ( 1 pero 1 . 1 los 1 del 1 no 1 ) 1 quizás 1 a 1 y 1 
+3477.txt neg la 1 comma 1 de 1 más 1 el 1 en 1 es 1 un 1 que 1 una 1 por 1 . 1 los 1 para 1 las 1 a 1 y 1 se 1 
