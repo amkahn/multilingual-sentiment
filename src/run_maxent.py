@@ -117,7 +117,7 @@ def create_vectors(input_dir):
            # for unigram_feature in unigrams.keys():
            #     # cut off - only use unigram features that appear at least 4 times
            #     if unigrams[unigram_feature] >= 4:
-           #         vector.append(unigram_feature)
+           #     vector.append(unigram_feature)
 
             # bigram features
            # bigrams = Counter()
@@ -128,14 +128,28 @@ def create_vectors(input_dir):
            # for bigram_feature in bigrams.keys():
            #     vector.append(bigram_feature)
 
-            # trigram features
-            trigrams = Counter()
+            # unigram and bigram features
+            unigrams = Counter()
+            bigrams = Counter()
             for line in current_file:
                 line = line.split()
-                for j in range(2,len(line)):
-                    trigrams[line[j-2]+"-"+line[j-1]+"-"+line[j]] += 1
-            for trigram_feature in trigrams.keys():
-                vector.append(trigram_feature)
+                for j in range(len(line)):
+                    unigrams[line[j]] += 1
+                    if j != 0:
+                        bigrams[line[j-1]+"-"+line[j]] += 1
+            for unigram_feature in unigrams.keys():
+                vector.append(unigram_feature)
+            for bigram_feature in bigrams.keys():
+                vector.append(bigram_feature)
+
+            # trigram features
+            #trigrams = Counter()
+            #for line in current_file:
+            #    line = line.split()
+            #    for j in range(2,len(line)):
+            #        trigrams[line[j-2]+"-"+line[j-1]+"-"+line[j]] += 1
+            #for trigram_feature in trigrams.keys():
+            #    vector.append(trigram_feature)
 
             current_file.close()
 
