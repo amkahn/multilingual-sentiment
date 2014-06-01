@@ -1,0 +1,31 @@
+assume train acc = 1.0 if not otherwise stated
+
+Trial #0
+test acc: 0.885
+
+Trial #1
+test acc: 0.88
+
+Trial #2
+test acc: 0.82
+
+Trial #3
+test acc: 0.81
+
+Trial #4
+test acc: 0.915
+
+Trial #5
+test acc: 0.83
+
+Trial #6
+test acc: 0.855
+
+Trial #7
+test acc: 0.865
+
+Trial #8
+test acc: 0.86
+
+Trial #9
+test acc: 0.88
