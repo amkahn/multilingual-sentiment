@@ -29,14 +29,27 @@ def main():
     input_dir = sys.argv[1]
     # second argument is the output directory
     output_dir = sys.argv[2]
+    # third argument is the sentiment lexicon
+    sentiment_lexicon_file = open(sys.argv[3],'r')
+
+    # read in sentiment lexicon
+    sentiment_lexicon = {}
+    for line in sentiment_lexicon_file:
+        line = line.split()
+        if line[0] in sentiment_lexicon:
+            sys.stderr.write("Warning: Same term occurs more than once in sentiment lexicon: "+line[0]+"\n")
+        else:
+            sentiment_lexicon[line[0]] = line[1]
+
 
     # create output directory if it doesn't already exist
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
 
+
     # create vectors from input_dir items
     sys.stderr.write("Creating vectors...\n")
-    all_train_vectors,all_test_vectors = create_vectors(input_dir)
+    all_train_vectors,all_test_vectors = create_vectors(input_dir,sentiment_lexicon)
 
     if len(all_train_vectors) > 10:
         sys.stderr.write("ERROR: More than 10 training sets!!\n")
@@ -80,7 +93,7 @@ def main():
     mallet_maxent(output_dir,len(all_train_vectors))
 
 
-def create_vectors(input_dir):
+def create_vectors(input_dir,sentiment_lexicon):
     all_train_vectors = [list() for i in range(10)]
     all_test_vectors = [list() for i in range(10)]
     # for each directory in the input directory
@@ -110,14 +123,16 @@ def create_vectors(input_dir):
             current_file = open(files[i],'r')
 
             # unigram features
-           # unigrams = Counter()
-           # for line in current_file:
-           #     for unigram in line.split():
-           #         unigrams[unigram] += 1
-           # for unigram_feature in unigrams.keys():
-           #     # cut off - only use unigram features that appear at least 4 times
+            unigrams = Counter()
+            for line in current_file:
+                for unigram in line.split():
+                    unigrams[unigram] += 1
+            for unigram_feature in unigrams.keys():
+                # cut off - only use unigram features that appear at least 4 times
            #     if unigrams[unigram_feature] >= 4:
-           #     vector.append(unigram_feature)
+                # only use unigram features that are in the sentiment lexicon
+                if unigram_feature in sentiment_lexicon:
+                    vector.append(unigram_feature)
 
             # bigram features
            # bigrams = Counter()
@@ -129,18 +144,18 @@ def create_vectors(input_dir):
            #     vector.append(bigram_feature)
 
             # unigram and bigram features
-            unigrams = Counter()
-            bigrams = Counter()
-            for line in current_file:
-                line = line.split()
-                for j in range(len(line)):
-                    unigrams[line[j]] += 1
-                    if j != 0:
-                        bigrams[line[j-1]+"-"+line[j]] += 1
-            for unigram_feature in unigrams.keys():
-                vector.append(unigram_feature)
-            for bigram_feature in bigrams.keys():
-                vector.append(bigram_feature)
+            #unigrams = Counter()
+            #bigrams = Counter()
+            #for line in current_file:
+            #    line = line.split()
+            #    for j in range(len(line)):
+            #        unigrams[line[j]] += 1
+            #        if j != 0:
+            #            bigrams[line[j-1]+"-"+line[j]] += 1
+            #for unigram_feature in unigrams.keys():
+            #    vector.append(unigram_feature)
+            #for bigram_feature in bigrams.keys():
+            #    vector.append(bigram_feature)
 
             # trigram features
             #trigrams = Counter()
