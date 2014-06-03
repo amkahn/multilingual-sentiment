@@ -1,9 +1,8 @@
 #!/opt/python-2.7/bin/python2.7
 
-from sys import argv
-from sys import stderr
-
-
+# Andrea Kahn
+# June 3, 2014
+#
 # This script takes as arguments the path to a file to be processed and the path to the
 # desired output file.
 #
@@ -27,6 +26,10 @@ from sys import stderr
 # leave one of which is classified as (Negativ or Ngtv)
 #
 # Note: Words are also lowercased in output file.
+
+
+from sys import argv
+from sys import stderr
 
 
 def main():
