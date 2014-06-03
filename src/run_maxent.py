@@ -3,7 +3,7 @@
 # Claire Jaja
 # Code last updated 4/30/14
 #
-# The command line is ./run_maxent.py input_dir output_dir
+# The command line is ./run_maxent.py input_dir output_dir sentiment_lexicon
 #
 # input_dir is a directory where each sub-directory represents a class
 # The files in the directory are text documents that belong to that class
@@ -17,6 +17,8 @@
 # MaxEnt.model
 # MaxEnt.out
 # MaxEnt.err
+#
+# The sentiment lexicon will be used for creating the feature vectors.
 
 import sys
 from collections import Counter
@@ -41,6 +43,7 @@ def main():
         else:
             sentiment_lexicon[line[0]] = line[1]
 
+    sys.stderr.write("Sentiment lexicon has "+str(len(sentiment_lexicon.keys()))+" entries.\n") 
 
     # create output directory if it doesn't already exist
     if not os.path.exists(output_dir):
