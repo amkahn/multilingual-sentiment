@@ -1,0 +1,23 @@
+Training vectors loaded from ../output/imdb_trigram_1cutoff/train.3.vectors
+Testing vectors loaded from ../output/imdb_trigram_1cutoff/test.3.vectors
+Value (labelProb=1247.6649250078444 prior=0.0) loglikelihood = -1247.6649250078444Value (labelProb=210716.78254112156 prior=0.4999999999998112) loglikelihood = -210717.28254112156Value (labelProb=21072.518144201895 prior=0.005000000000003923) loglikelihood = -21072.523144201896Value (labelProb=10539.440343310103 prior=0.0012500000000009806) loglikelihood = -10539.441593310103Value (labelProb=5294.75078684691 prior=3.125000000002451E-4) loglikelihood = -5294.75109934691     Value (labelProb=2768.9577022220456 prior=7.812500000006114E-5) loglikelihood = -2768.9577803470456Value (labelProb=1700.22430377601 prior=1.9531250000015254E-5) loglikelihood = -1700.22432330726   Value (labelProb=1344.6432630644435 prior=4.882812500003798E-6) loglikelihood = -1344.643267947256Value (labelProb=1255.5278804892002 prior=1.220703125000941E-6) loglikelihood = -1255.5278817099033Value (labelProb=1240.6159181497128 prior=3.0517578125023135E-7) loglikelihood = -1240.6159184548885Value (labelProb=1240.6159181497128 prior=3.0517578125023135E-7) loglikelihood = -1240.6159184548885
+EXITING BACKTRACK: Jump too small (alamin=0.0017304474983834263). Exiting and using xold. Value=-1240.6159184548885
+cc.mallet.optimize.OptimizationException: Line search could not step in the current direction. (This is not necessarily cause for alarm. Sometimes this happens close to the maximum, where the function may be very flat.)
+	at cc.mallet.optimize.LimitedMemoryBFGS.optimize(LimitedMemoryBFGS.java:231)
+	at cc.mallet.classify.MaxEntTrainer.train(MaxEntTrainer.java:252)
+	at cc.mallet.classify.MaxEntTrainer.train(MaxEntTrainer.java:242)
+	at cc.mallet.classify.MaxEntTrainer.train(MaxEntTrainer.java:52)
+	at cc.mallet.classify.tui.Vectors2Classify.main(Vectors2Classify.java:411)
+Catching OptimizationException; saying converged.
+Value (labelProb=194419.3036722751 prior=0.4996801454596971) loglikelihood = -194419.80335242057Value (labelProb=19261.78460220924 prior=0.004968289204174208) loglikelihood = -19261.789570498448Value (labelProb=9536.703369620007 prior=0.0012342971899777142) loglikelihood = -9536.704603917196Value (labelProb=4716.944054849522 prior=3.048011828794806E-4) loglikelihood = -4716.944359650705 Value (labelProb=2461.9239461111556 prior=7.442817933037061E-5) loglikelihood = -2461.924020539335Value (labelProb=1577.677894838428 prior=1.783542755580979E-5) loglikelihood = -1577.6779126738556Value (labelProb=1310.8866168133773 prior=4.187489168529679E-6) loglikelihood = -1310.8866210008664Value (labelProb=1248.2669694509043 prior=1.0256293498899043E-6) loglikelihood = -1248.2669704765337Value (labelProb=1237.4690300764664 prior=3.60226784319945E-7) loglikelihood = -1237.4690304366932  Value (labelProb=1237.4690300764664 prior=3.60226784319945E-7) loglikelihood = -1237.4690304366932
+EXITING BACKTRACK: Jump too small (alamin=0.0010668779187674464). Exiting and using xold. Value=-1237.4690304366932
+cc.mallet.optimize.OptimizationException: Line search could not step in the current direction. (This is not necessarily cause for alarm. Sometimes this happens close to the maximum, where the function may be very flat.)
+	at cc.mallet.optimize.LimitedMemoryBFGS.optimize(LimitedMemoryBFGS.java:231)
+	at cc.mallet.optimize.LimitedMemoryBFGS.optimize(LimitedMemoryBFGS.java:93)
+	at cc.mallet.classify.MaxEntTrainer.train(MaxEntTrainer.java:274)
+	at cc.mallet.classify.MaxEntTrainer.train(MaxEntTrainer.java:242)
+	at cc.mallet.classify.MaxEntTrainer.train(MaxEntTrainer.java:52)
+	at cc.mallet.classify.tui.Vectors2Classify.main(Vectors2Classify.java:411)
+Catching OptimizationException; saying converged.
+
+
