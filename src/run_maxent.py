@@ -1,7 +1,7 @@
 #!/opt/python-3.1/bin/python3
 #
 # Claire Jaja
-# Code last updated 4/30/14
+# Code last updated 6/7/14
 #
 # The command line is ./run_maxent.py input_dir output_dir sentiment_lexicon
 #
@@ -21,7 +21,7 @@
 # The sentiment lexicon will be used for creating the feature vectors.
 
 import sys
-from collections import Counter
+from collections import defaultdict, Counter 
 import os
 import re
 import subprocess
@@ -99,6 +99,19 @@ def main():
 def create_vectors(input_dir,sentiment_lexicon):
     all_train_vectors = [list() for i in range(10)]
     all_test_vectors = [list() for i in range(10)]
+    
+    # to collect unigram counts
+    # since we're using 10-fold cross validation
+    # this will be a nested dictionary
+    # first key is which trial it's part of the test set for (0 - 9)
+    # second key is a tuple of (instance_name, label) for that particular vector
+    # value is a set of unigrams in that instancce
+    all_unigrams = defaultdict(lambda:defaultdict(set))
+    # meanwhile keep track of training unigram counts for each trial
+    # first key is which trial it's counting training unigrams for (0 - 9)
+    # second key is the unigram, value is its count
+    training_unigram_counts = defaultdict(Counter)
+
     # for each directory in the input directory
     possible_dir = [os.path.join(input_dir,x) for x in os.listdir(input_dir)]
     for dir in [x for x in possible_dir if os.path.isdir(x)]:
@@ -107,35 +120,37 @@ def create_vectors(input_dir,sentiment_lexicon):
         possible_files = [os.path.join(dir,x) for x in os.listdir(dir)]
         files = [x for x in possible_files if os.path.isfile(x)]
 
-
         # use first 90% files as train, last 10% as test
-        #train_test_split = int(len(files)*.9)
-        #    if i < train_test_split:
-        #        train_vectors.append(vector)
-        #    else:
-        #        test_vectors.append(vector)
-
-
-
         ten_percent = int(len(files)*.1)
 
         for i in range(len(files)):
-            # for each file, build a vector
+            # for each file, collect its counts
             instance_name = os.path.basename(files[i])
-            vector = [instance_name,label]
+            #vector = [instance_name,label]
             current_file = open(files[i],'r')
 
+            # figure out which trial it will be test set for
+            trial = int(i/ten_percent)
+
             # unigram features
-            unigrams = Counter()
+            #unigrams = Counter()
             for line in current_file:
                 for unigram in line.split():
-                    unigrams[unigram] += 1
-            for unigram_feature in unigrams.keys():
+                    # add to the set for that vector in its test trial
+                    all_unigrams[trial][(instance_name,label)].add(unigram)
+                    # add to the count for the training for all other trials
+                    for n in range(10):
+                        if n != trial:
+                            training_unigram_counts[n][unigram] += 1
+                    #unigrams[unigram] += 1
+
+
+           # for unigram_feature in unigrams.keys():
                 # cut off - only use unigram features that appear at least 4 times
            #     if unigrams[unigram_feature] >= 4:
                 # only use unigram features that are in the sentiment lexicon
-                if unigram_feature in sentiment_lexicon:
-                    vector.append(unigram_feature)
+           #     if unigram_feature in sentiment_lexicon:
+           #         vector.append(unigram_feature)
 
             # bigram features
            # bigrams = Counter()
@@ -173,15 +188,39 @@ def create_vectors(input_dir,sentiment_lexicon):
 
             # add to appropriate training and test vectors
             # for each cross-validation trial
-            for n in range(10):
+            #for n in range(10):
                 # if this vector is in the 10% of files for test for that trial
-                if i >= n*ten_percent and i < (n+1)*ten_percent:
+            #    if i >= n*ten_percent and i < (n+1)*ten_percent:
                     #sys.stderr.write("Adding vector for file #"+str(i)+": "+str(files[i])+" to test for trial #"+str(n)+"\n")
                     # use as test for this trial, train for all others
-                    all_test_vectors[n].append(vector)
-                    for j in range(10):
-                        if j != n:
-                            all_train_vectors[j].append(vector)
+            #        all_test_vectors[n].append(vector)
+            #        for j in range(10):
+            #            if j != n:
+            #                all_train_vectors[j].append(vector)
+
+
+    # for every trial, create its vectors
+    # test vectors will be those in that trial
+    # all others are train vectors for that trial
+    cut_off = 1
+    for trial in range(10):
+        # generate a set of the unigrams that occurred > cut off in training data
+        training_unigrams = set()
+        for unigram,count in training_unigram_counts[trial].items():
+            if count >= cut_off:
+                training_unigrams.add(unigram)
+        # generate vectors using set of unigrams
+        for n in all_unigrams: # loop through all trials
+            for key,unigrams in all_unigrams[n].items(): # metadata and set of unigrams for a file
+                (instance_name,label) = key
+                vector = [instance_name, label]
+                for unigram in unigrams:
+                    if unigram in training_unigrams: # if it met the cut off in the training data
+                        vector.append(unigram)
+                if n == trial: # test vector
+                    all_test_vectors[trial].append(vector)
+                else: # train vector
+                    all_train_vectors[trial].append(vector)
 
     return all_train_vectors,all_test_vectors
 
