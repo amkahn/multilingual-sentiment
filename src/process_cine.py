@@ -1,5 +1,8 @@
 #!/opt/python-2.7/bin/python2.7
 
+# Andrea Kahn
+# May 2, 2014
+#
 # This script takes a review file as input and prints the rating and the tokenized text separated by a space.
 
 
