@@ -1,0 +1,2 @@
+Training vectors loaded from ../output/imdb_unigram_4cutoff//train.9.vectors
+Testing vectors loaded from ../output/imdb_unigram_4cutoff//test.9.vectors

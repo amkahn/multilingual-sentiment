@@ -1,0 +1,2 @@
+Training vectors loaded from ../output/imdb_bigram_1cutoff//train.2.vectors
+Testing vectors loaded from ../output/imdb_bigram_1cutoff//test.2.vectors
