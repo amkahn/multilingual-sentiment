@@ -4,6 +4,9 @@ mallet_notes.txt
 # data files are too large
 data/
 
+# output files are too large
+output/
+
 *.pyc
 *~
 
