@@ -27,4 +27,6 @@ def main():
 
     # then take those lines and print to stdout
     for random_line in random_lines:
-        output_file.write(random_lines)
+        output_file.write(random_line)
+
+main()
