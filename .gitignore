@@ -4,5 +4,12 @@ mallet_notes.txt
 # data files are too large
 data/
 
+# output files are too large
+output/
+
 *.pyc
 *~
+
+# didn't end up using these scripts
+EngLexTermsToSpan.java
+eng_lex_to_span.sh
