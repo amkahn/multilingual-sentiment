@@ -39,7 +39,9 @@ def main():
         # read in sentiment lexicon
         for line in sentiment_lexicon_file:
             line = line.split()
-            if line[0] in sentiment_lexicon:
+            if len(line) > 2:
+                sys.stderr.write("Warning: Multiple word term: "+str(line[:-1])+"\n")
+            elif line[0] in sentiment_lexicon:
                 sys.stderr.write("Warning: Same term occurs more than once in sentiment lexicon: "+line[0]+"\n")
             else:
                 sentiment_lexicon[line[0]] = line[1]
@@ -108,15 +110,15 @@ def create_vectors(input_dir,sentiment_lexicon):
     # first key is which trial it's part of the test set for (0 - 9)
     # second key is a tuple of (instance_name, label) for that particular vector
     # value is a set of unigrams in that instancce
-    #all_unigrams = defaultdict(lambda:defaultdict(set))
+    all_unigrams = defaultdict(lambda:defaultdict(set))
     #all_bigrams = defaultdict(lambda:defaultdict(set))
-    all_trigrams = defaultdict(lambda:defaultdict(set))
+    #all_trigrams = defaultdict(lambda:defaultdict(set))
     # meanwhile keep track of training unigram counts for each trial
     # first key is which trial it's counting training unigrams for (0 - 9)
     # second key is the unigram, value is its count
-    #training_unigram_counts = defaultdict(Counter)
+    training_unigram_counts = defaultdict(Counter)
     #training_bigram_counts = defaultdict(Counter)
-    training_trigram_counts = defaultdict(Counter)
+    #training_trigram_counts = defaultdict(Counter)
 
     # for each directory in the input directory
     possible_dir = [os.path.join(input_dir,x) for x in os.listdir(input_dir)]
@@ -138,14 +140,14 @@ def create_vectors(input_dir,sentiment_lexicon):
             trial = int(i/ten_percent)
 
             # unigram features
-            #for line in current_file:
-            #    for unigram in line.split():
-            #        # add to the set for that vector in its test trial
-            #        all_unigrams[trial][(instance_name,label)].add(unigram)
-            #        # add to the count for the training for all other trials
-            #        for n in range(10):
-            #            if n != trial:
-            #                training_unigram_counts[n][unigram] += 1
+            for line in current_file:
+                for unigram in line.split():
+                    # add to the set for that vector in its test trial
+                    all_unigrams[trial][(instance_name,label)].add(unigram)
+                    # add to the count for the training for all other trials
+                    for n in range(10):
+                        if n != trial:
+                            training_unigram_counts[n][unigram] += 1
 
             # bigram features
             #for line in current_file:
@@ -160,53 +162,53 @@ def create_vectors(input_dir,sentiment_lexicon):
             #                training_bigram_counts[n][bigram] += 1
 
             # trigram features
-            for line in current_file:
-                line = line.split()
-                for j in range(2,len(line)):
-                    trigram = line[j-2]+"-"+line[j-1]+"-"+line[j]
-                    # add to the set for that vector in its test trial
-                    all_trigrams[trial][(instance_name,label)].add(trigram)
-                    # add to the count for the training for all other trials
-                    for n in range(10):
-                        if n != trial:
-                            training_trigram_counts[n][trigram] += 1
+            #for line in current_file:
+            #    line = line.split()
+            #    for j in range(2,len(line)):
+            #        trigram = line[j-2]+"-"+line[j-1]+"-"+line[j]
+            #        # add to the set for that vector in its test trial
+            #        all_trigrams[trial][(instance_name,label)].add(trigram)
+            #        # add to the count for the training for all other trials
+            #        for n in range(10):
+            #            if n != trial:
+            #                training_trigram_counts[n][trigram] += 1
 
             current_file.close()
 
     # for every trial, create its vectors
     # test vectors will be those in that trial
     # all others are train vectors for that trial
-    cut_off = 3
+    cut_off = 1
     for trial in range(10):
         # generate a set of the unigrams that occurred > cut off in training data
-        #training_unigrams = set()
+        training_unigrams = set()
         #training_bigrams = set()
-        training_trigrams = set()
-        #for unigram,count in training_unigram_counts[trial].items():
+        #training_trigrams = set()
+        for unigram,count in training_unigram_counts[trial].items():
         #for bigram,count in training_bigram_counts[trial].items():
-        for trigram,count in training_trigram_counts[trial].items():
-            if count >= cut_off:
-                #training_unigrams.add(unigram)
+        #for trigram,count in training_trigram_counts[trial].items():
+            if count >= cut_off and unigram in sentiment_lexicon:
+                training_unigrams.add(unigram)
                 #training_bigrams.add(bigram)
-                training_trigrams.add(trigram)
+                #training_trigrams.add(trigram)
         # generate vectors using set of unigrams
-        #for n in all_unigrams: # loop through all trials
+        for n in all_unigrams: # loop through all trials
         #for n in all_bigrams: # loop through all trials
-        for n in all_trigrams: # loop through all trials
-            #for key,unigrams in all_unigrams[n].items(): # metadata and set of unigrams for a file
+        #for n in all_trigrams: # loop through all trials
+            for key,unigrams in all_unigrams[n].items(): # metadata and set of unigrams for a file
             #for key,bigrams in all_bigrams[n].items(): # metadata and set of unigrams for a file
-            for key,trigrams in all_trigrams[n].items(): # metadata and set of unigrams for a file
+            #for key,trigrams in all_trigrams[n].items(): # metadata and set of unigrams for a file
                 (instance_name,label) = key
                 vector = [instance_name, label]
-                #for unigram in unigrams:
-                #    if unigram in training_unigrams: # if it met the cut off in the training data
-                #        vector.append(unigram)
+                for unigram in unigrams:
+                    if unigram in training_unigrams: # if it met the cut off in the training data
+                        vector.append(unigram)
                 #for bigram in bigrams:
                 #    if bigram in training_bigrams: # if it met the cut off in the training data
                 #        vector.append(bigram)
-                for trigram in trigrams:
-                    if trigram in training_trigrams: # if it met the cut off in the training data
-                        vector.append(trigram)
+                #for trigram in trigrams:
+                #    if trigram in training_trigrams: # if it met the cut off in the training data
+                #        vector.append(trigram)
                 if n == trial: # test vector
                     all_test_vectors[trial].append(vector)
                 else: # train vector
