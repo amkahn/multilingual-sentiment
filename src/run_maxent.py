@@ -39,7 +39,7 @@ def main():
     # fourth argument is the sentiment lexicon
     sentiment_lexicon = {}
     if len(sys.argv) > 4:
-        sentiment_lexicon_file = open(sys.argv[3],'r')
+        sentiment_lexicon_file = open(sys.argv[4],'r')
 
         # read in sentiment lexicon
         for line in sentiment_lexicon_file:
@@ -50,6 +50,11 @@ def main():
                 sys.stderr.write("Warning: Same term occurs more than once in sentiment lexicon: "+line[0]+"\n")
             else:
                 sentiment_lexicon[line[0]] = line[1]
+                # also add their negated versions
+                if line[1] == "pos":
+                    sentiment_lexicon["NOT_"+line[0]] = "neg"
+                else: # neg
+                    sentiment_lexicon["NOT_"+line[0]] = "pos"
         sentiment_lexicon_file.close()
 
         sys.stderr.write("Sentiment lexicon has "+str(len(sentiment_lexicon.keys()))+" entries.\n") 
