@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Get the first 10 XML file paths
+# Get the first 10 XML file paths - 6/10: Should this be 'all XML file paths'?
 FILES=$(find /home2/amkahn/workspace/575/data/corpusCine/corpusCriticasCine -maxdepth 1 -type f -name '*.xml')
 
 # Get the number of XML files
