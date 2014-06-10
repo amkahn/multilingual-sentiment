@@ -1,0 +1,123 @@
+\documentclass[11pt]{article}
+\usepackage{acl2014}
+\usepackage{times}
+\usepackage{url}
+\usepackage{latexsym}
+
+% Change this if needed to set titlebox size.
+%\setlength\titlebox{5cm}
+
+\title{LING 575: Intermediate Project Report}
+
+\author{Claire Jaja \\
+  University of Washington \\
+  Seattle, WA \\
+  {\tt cjaja@uw.edu} \\\And
+  Andrea Kahn \\
+  University of Washington \\
+  Seattle, WA \\
+  {\tt amkahn@uw.edu} \\}
+
+\date{}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+In this paper, we propose an approach to compare the effectiveness of supposedly language-agnostic sentiment analysis techniques such as machine learning algorithms on text in different languages.  In addition, we plan to compare results obtained when using resources such as sentiment lexicons that are pivoted or translated from English versus using resources that are developed in the test language.
+\end{abstract}
+
+\section{Introduction}
+
+Sentiment analysis techniques are typically developed on English text.  However, there is a proliferation of text in other languages as well, which could benefit from sentiment analysis.  Current approaches to sentiment analysis in languages other than English often involve automatically translating the text into English, which is likely to introduce errors, as well as increasing runtimes.  Furthermore, we suspect that syntactic variation between languages means that different features may be more useful for different languages.
+
+Some techniques build on machine learning algorithms that can easily be applied to other languages.  Others rely on manually developed resources such as sentiment lexicons, which are language-specific; often lexicons in languages other than English are translated or pivoted from English rather than developed for that language.
+
+In this paper, we propose an approach to compare the effectiveness of supposedly language-agnostic techniques such as machine learning algorithms on text in different languages.  In addition, we plan to compare results obtained when using resources such as sentiment lexicons that are pivoted or translated from English versus using resources that are developed in the test language.
+
+\section{Related Work}
+
+Other work on sentiment analysis in languages other than English have taken a variety of approaches, most of which involve adapting readily available English resources.
+
+In her Ph.D. thesis, \newcite{balahur2011} compares the results of performing sentiment analysis and opinion mining on different text types using a variety of multilingual resources, many of them hand-built.  She allegedly obtains "good" results even on texts in languages for which no resources are available and either the texts or resources need to be translated, though we plan to take a closer look.
+
+\newcite{brooke2009} adapt various English resources, including semantic orientation calculators and dictionaries, for Spanish sentiment analysis.  They also compare the results of using machine translation to translate the Spanish text into English, as well as using a language-independent machine learning algorithm (SVM classification) to classify the Spanish text.  They conclude that the results obtained using adapted resources are not comparable to those using language-specific resources.
+
+\newcite{vilares2013syn} describes a system for polarity classification of Spanish texts that uses dependency parsing to access the syntactic structure of the sentences to be classified.  This paper is unique in that it diverges from the shallow approaches taken in most polarity classification papers, and whether or not we are able to employ deep processing techniques, we hope to learn more about challenges that may be specific to Spanish sentiment analysis from the approach and results presented here.
+
+Other papers describing related work that we hope to study and draw from include \newcite{boiy2009}, \newcite{cruzmata2011}, \newcite{fernandez2012}, \newcite{pang2004}, \newcite{pang2002}, \newcite{urizar2012}, \newcite{vilares2013}, and \newcite{zhang2009}.
+
+\section{Data}
+
+For our experiments, we are using comparable corpora in multiple languages.
+
+Firstly, we use the polarity dataset v2.0 described in \newcite{pang2004}, which consists of 1000 positive and 1000 negative pre-processed reviews from IMDb.  For a comparable dataset in another language, we use CorpusCine Reviews \cite{cruzmata2011}, a collection of 3,878 movie reviews written in Spanish from the muchocine.net web page.  Each review has a rating between one (most negative) and five (most positive) stars.  For our purposes, we discard the three star reviews and classify the one and two star reviews as negative and the four and five star reviews as positive.  This leaves us with 1,274 negative reviews and 1,351 positive reviews.
+
+Additionally, we have a corpus of 1,590 English quotations from newspaper articles annotated for polarity and a comparable corpus of 2,387 German quotations from newspaper articles; both of these were annotated based on the same annotation criteria \cite{balahur2011}.
+
+\section{Approach}
+
+We employ the Mallet toolkit to train and test polarity classifiers on these two datasets.  We plan to test a variety of classification algorithms and features, in order to determine if certain ones provide better results for one language or another.  Additionally, we plan to do a linguistic error analysis, to tease apart the impact of the language differences (in this vein, Andrea hopes to use this course as a linguistics elective, while Claire is using it as a computational linguistics elective).
+
+\section{Results}
+
+We have implemented a baseline system on both movie review datasets using a MaxEnt classifier and unigram bag of word features.  For each dataset, we use 90\% of the reviews for training and 10\% for testing; this gives us a training set of 900 positive and 900 negative reviews for the IMDb corpus and 1,215 positive and 1,146 negative reviews for the CorpusCine corpus.  There are 100 positive and 100 negative reviews in the IMDb test set and 136 positive and 128 negative reviews in the CorpusCine test set.  The results for this system are presented below.
+
+\vspace{5mm}
+{\centering
+\begin{tabular}{|c|c|c|c|}
+\hline
+\textbf{Classifier} & \textbf{features} & \textbf{IMDb} & \textbf{CorpusCine} \\ \hline
+MaxEnt & unigram & 88.00\% & 83.71\% \\ \hline
+\end{tabular}
+
+\vspace{1mm}
+\emph{Table 1: Baseline results.  Test accuracy for IMDb and CorpusCine.}
+\par}
+
+\vspace{5mm}
+{\centering
+\begin{tabular}{|c|c|c|}
+\hline
+\textbf{label} & \emph{negative} & \emph{positive} \\ \hline
+\emph{negative} & 86 & 14 \\ \hline
+\emph{positive} & 10 & 90 \\ \hline
+\end{tabular}
+
+\vspace{1mm}
+\emph{Table 2: IMDb confusion matrix. Row = true, column = predicted.}
+\par}
+
+\vspace{5mm}
+{\centering
+\begin{tabular}{|c|c|c|}
+\hline
+\textbf{label} & \emph{negative} & \emph{positive} \\ \hline
+\emph{negative} & 103 & 25 \\ \hline
+\emph{positive} & 18 & 118 \\ \hline
+\end{tabular}
+
+\vspace{1mm}
+\emph{Table 3: CorpusCine confusion matrix. Row = true, column = predicted.}
+\par}
+
+\section{Discussion}
+
+The task we approach in this project has many challenges.  In addition to the inherent difficulties of the polarity classification task itself, finding appropriately comparable corpora in two languages and performing pre-processing on the data so that the same techniques can be applied to both corpora has proven difficult.  Likewise, finding comparable sentiment lexicons in multiple languages will be a challenge.  Finally, we will be faced with the task of analyzing our findings to determine whether morphological or syntactic properties of the languages are responsible for the results shown, and if so, how future research can take these linguistic differences into account when attempting sentiment analysis on languages other than English.
+
+Our next steps include cutting back the CorpusCine train and test sets to have the same number of reviews as the IMDb train and test sets to make the results as directly comparable as possible.  To this end, we will also compare review lengths (i.e. average, minimum, and maximum number of tokens and types).  After that, we hope to implement n-fold cross validation of our results (most likely with n=10). 
+
+Once our datasets are fully established, we will test different classification algorithms and features, as well as a variety of external resources (e.g. polarity lexicons, both native and pivoted/translated).
+
+\section{Conclusion}
+
+In this paper, we propose an approach to evaluate the effectiveness of techniques and resources developed on English when applied to other languages.  We hope to provide analysis of our results with an emphasis on linguistic differences and inform future research on non-English sentiment analysis.
+
+\nocite{*}
+\bibliographystyle{acl}
+\bibliography{references}
+
+%\begin{thebibliography}{}
+
+%\end{thebibliography}
+
+\end{document}
