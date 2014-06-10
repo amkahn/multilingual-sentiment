@@ -59,7 +59,7 @@ def main():
 
     # create vectors from input_dir items
     sys.stderr.write("Creating vectors...\n")
-    all_train_vectors,all_test_vectors = create_vectors(input_dir)
+    all_train_vectors,all_test_vectors = create_vectors(input_dir,cut_off)
 
     if len(all_train_vectors) > 10:
         sys.stderr.write("ERROR: More than 10 training sets!!\n")
@@ -148,8 +148,8 @@ def create_vectors(input_dir,cut_off):
             # figure out which trial it will be test set for
             trial = int(i/ten_percent)
 
-            if (instance_name,label) in all_trigrams[trial]:
-                sys.stderr.write("Warning: Already saw this instance - "+instance_name+"!\n")
+            #if (instance_name,label) in all_trigrams[trial]:
+            #    sys.stderr.write("Warning: Already saw this instance - "+instance_name+"!\n")
 
             # unigram features
             # actual quote is the second part of line
