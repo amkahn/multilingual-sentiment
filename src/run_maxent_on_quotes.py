@@ -3,7 +3,7 @@
 # Claire Jaja
 # Code last updated 6/7/14
 #
-# The command line is ./run_maxent.py input_dir output_dir
+# The command line is ./run_maxent.py input_dir output_dir cut_off
 #
 # input_dir is a directory where each file represents a class
 # The files in the directory are text documents that belong to that class
@@ -17,6 +17,9 @@
 # MaxEnt.model
 # MaxEnt.out
 # MaxEnt.err
+#
+# The cut off is the required occurrences of an n-gram in the training data
+# to be included as a feature.
 
 import sys
 from collections import defaultdict, Counter 
@@ -29,6 +32,8 @@ def main():
     input_dir = sys.argv[1]
     # second argument is the output directory
     output_dir = sys.argv[2]
+    # third argument is the cut off
+    cut_off = int(sys.argv[3])
     # third argument is the sentiment lexicon
     #sentiment_lexicon = {}
     #if len(sys.argv) > 3:
@@ -98,7 +103,7 @@ def main():
     mallet_maxent(output_dir,len(all_train_vectors))
 
 
-def create_vectors(input_dir):
+def create_vectors(input_dir,cut_off):
     all_train_vectors = [list() for i in range(10)]
     all_test_vectors = [list() for i in range(10)]
     
@@ -186,7 +191,6 @@ def create_vectors(input_dir):
     # for every trial, create its vectors
     # test vectors will be those in that trial
     # all others are train vectors for that trial
-    cut_off = 3
     for trial in range(10):
         # generate a set of the unigrams that occurred > cut off in training data
         #training_unigrams = set()
